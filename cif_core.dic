@@ -11,7 +11,7 @@ data_CIF_CORE
     _dictionary.title             CIF_CORE
     _dictionary.class             Instance
     _dictionary.version           3.4.0
-    _dictionary.date              2026-08-05
+    _dictionary.date              2026-08-20
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_core/main/cif_core.dic
     _dictionary.ddl_conformance   4.2.0
@@ -8429,12 +8429,11 @@ save_
 save_reflns_shell.d_res_limits
 
     _definition.id                '_reflns_shell.d_res_limits'
-    _definition.update            2012-11-26
+    _definition.update            2026-08-20
     _description.text
 ;
     Resolution for the reflections in this shell stored as
-    the list of lowest and highest values. This is the
-    category key.
+    the list of lowest and highest values.
 ;
     _name.category_id             reflns_shell
     _name.object_id               d_res_limits
@@ -29581,7 +29580,7 @@ save_
        _atom_site.U_iso_or_equiv. [bm, after Nespolo, M. (2024).
        J. Appl. Cryst. 57, 1733-1746]
 ;
-         3.4.0                    2026-08-05
+         3.4.0                    2026-08-20
 ;
        # Append change information below and update the above date
        # until dictionary is ready for release.
