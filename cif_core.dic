@@ -11,7 +11,7 @@ data_CIF_CORE
     _dictionary.title             CIF_CORE
     _dictionary.class             Instance
     _dictionary.version           3.3.0
-    _dictionary.date              2026-07-20
+    _dictionary.date              2026-09-01
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_core/master/cif_core.dic
     _dictionary.ddl_conformance   4.2.0
@@ -8546,12 +8546,11 @@ save_
 save_reflns_shell.d_res_limits
 
     _definition.id                '_reflns_shell.d_res_limits'
-    _definition.update            2012-11-26
+    _definition.update            2026-08-20
     _description.text
 ;
     Resolution for the reflections in this shell stored as
-    the list of lowest and highest values. This is the
-    category key.
+    the list of lowest and highest values.
 ;
     _name.category_id             reflns_shell
     _name.object_id               d_res_limits
@@ -12126,10 +12125,10 @@ save_
 save_space_group.multiplicity
 
     _definition.id                '_space_group.multiplicity'
-    _definition.update            2021-03-01
+    _definition.update            2026-09-01
     _description.text
 ;
-    Number of unique symmetry elements in the space group.
+    Number of unique symmetry operations in the space group.
 ;
     _name.category_id             space_group
     _name.object_id               multiplicity
@@ -26336,6 +26335,8 @@ save_atom_type_scat.exponential_polynomial_coefs
 
     where s = sin(θ)/λ, θ is the diffraction angle and λ is the wavelength
     of the incident radiation in angstroms.
+
+    Ref: Thorkildsen, G. (2023). Acta Cryst. A79, 318–330.
 ;
     _name.category_id             atom_type_scat
     _name.object_id               exponential_polynomial_coefs
@@ -26426,6 +26427,8 @@ save_atom_type_scat.gaussian_coefs
 
     where s = sin(θ)/λ, θ is the diffraction angle and λ is the wavelength
     of the incident radiation in angstroms.
+
+    Ref: Thorkildsen, G. (2023). Acta Cryst. A79, 318–330.
 ;
     _name.category_id             atom_type_scat
     _name.object_id               Gaussian_coefs
@@ -29514,7 +29517,7 @@ save_
        Changed the purpose of the _diffrn_radiation_wavelength.id data item
        from 'Encode' to 'Key'.
 ;
-         3.3.0                    2026-07-20
+         3.3.0                    2026-09-01
 ;
        Expanded available form factor parameterisations, added support for
        isotopes and symmforms for atom sites. More details can be added
@@ -29594,4 +29597,11 @@ save_
        _space_group.transform_Qq_xyz from symCIF to SPACE_GROUP.
 
        Remove _exptl_crystal.id as it is present in multiblock dictionary.
+
+       Changed 'elements' to 'operations' in _space_group.multiplicity.
+
+       _reflns_shell.d_res_limits is not the key to the category.
+
+       Added Thorkildsen reference to _atom_type_scat.Gaussian_coefs
+       and _atom_type_scat.exponential_polynomial_coefs.
 ;
