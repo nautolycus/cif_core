@@ -5710,7 +5710,7 @@ save_diffrn_reflns_transf_matrix.tij
                                  |31 32 33|
 ;
     _name.category_id             diffrn_reflns_transf_matrix
-    _name.object_id               TIJ
+    _name.object_id               Tij
     _type.purpose                 Number
     _type.source                  Derived
     _type.container               Matrix
