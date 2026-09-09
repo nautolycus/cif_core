@@ -9299,7 +9299,7 @@ save_chemical.enantioexcess_bulk
     (Moss et al., 1996). The composition of the crystal
     and bulk must be the same.
 
-    Ref: Moss G. P. et al. (1996). Basic terminology of stereochemistry.
+    Reference: Moss G. P. et al. (1996). Basic terminology of stereochemistry.
          Pure Appl. Chem. 68, 2193-2222.
          https://doi.org/10.1351/pac199668122193
          https://iupac.qmul.ac.uk/stereo/
@@ -9466,7 +9466,7 @@ save_chemical.identifier_inchi
     a standard and human-readable way to encode molecular information
     and to facilitate the search for such information in databases
     and on the web.
-    Ref: McNaught, A. (2006). Chem. Int., 28(6), 12-14.
+    Reference: McNaught, A. (2006). Chem. Int., 28(6), 12-14.
          https://doi.org/10.1515/ci.2006.28.6.12
          https://www.iupac.org/inchi/
 ;
@@ -10766,7 +10766,7 @@ save_exptl_absorpt.special_details
        Petty, Anthony J. et al. (2019). Computationally aided design of a high-
        performance organic semiconductor: the development of a universal
        crystal engineering core. Chem. Sci., 10, 10543-10649.
-       https://doi.org/10.1039/C9SC02930C; COD 1552381.
+       https://doi.org/10.1039/C9SC02930C; COD ID 1552381.
 ;
 ;
        Neutron linear absorption coefficient is wavelength
@@ -10779,7 +10779,7 @@ save_exptl_absorpt.special_details
        Lengyel, Jeff et al. (2019). Antiferroelectric phase transition in a
        proton-transfer salt of squaric acid and 2,3-dimethylpyrazine.
        J. Am. Chem. Soc., 141, 16279-16287.
-       https://doi.org/10.1021/jacs.9b04473; COD 4127699.
+       https://doi.org/10.1021/jacs.9b04473; COD ID 4127699.
 ;
 
 save_
@@ -13724,7 +13724,7 @@ save_geom_bond.distance
     _description.text
 ;
     Intramolecular bond distance between the sites identified
-    by _geom_bond.id
+    by _geom_bond.id.
 ;
     _name.category_id             geom_bond
     _name.object_id               distance
@@ -14016,7 +14016,7 @@ save_geom_contact.distance
     _description.text
 ;
     Intermolecular distance between the atomic sites identified
-    by _geom_contact.id
+    by _geom_contact.id.
 ;
     _name.category_id             geom_contact
     _name.object_id               distance
@@ -14638,7 +14638,8 @@ save_geom_torsion.angle
 ;
     Angle defined by the sites identified by _geom_torsion.id.
     The torsion-angle definition should be that of Klyne and Prelog.
-    The vector direction *_label_2 to *_label_3 is the viewing
+    The vector direction _geom_torsion.atom_site_label_2 to 
+    _geom_torsion.atom_site_label_3 is the viewing
     direction, and the torsion angle is the angle of twist required
     to superimpose the projection of the vector between site 2 and
     site 1 onto the projection of the vector between site 3 and
@@ -15254,7 +15255,7 @@ save_model_site.index
     _definition.update            2021-03-01
     _description.text
 ;
-    Index number of an atomic site in the connected molecule.
+    Index number of an atom site in the connected molecule.
 ;
     _name.category_id             model_site
     _name.object_id               index
@@ -15336,7 +15337,7 @@ save_model_site.radius_contact
     _definition.update            2012-11-22
     _description.text
 ;
-    Atomic contact radius of atom specie located at this site.
+    Atomic contact radius of atom species located at this site.
 ;
     _name.category_id             model_site
     _name.object_id               radius_contact
@@ -15373,7 +15374,7 @@ save_model_site.type_symbol
     _definition.update            2021-10-27
     _description.text
 ;
-    Code to identify the atom specie(s) occupying this site.
+    Code to identify the atom species occupying this site.
 ;
     _name.category_id             model_site
     _name.object_id               type_symbol
@@ -15897,7 +15898,7 @@ save_audit.update_record
     _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
-    _description_example.case     'Updated by coeditor'
+    _description_example.case     'Updated by Co-editor'
 
 save_
 
@@ -16386,7 +16387,7 @@ save_audit_contact_author.email
     The electronic mail (e-mail) address of the author of the data set
     to whom correspondence about crystallographic details should be
     addressed.
-    The email address should be given in a form recognizable to
+    The e-mail address should be given in a form recognizable to
     international networks. The format of e-mail addresses is given
     in RFC 2822.
 
@@ -18725,7 +18726,7 @@ save_journal.coden_cambridge
     _definition.update            2012-12-11
     _description.text
 ;
-    Cambridge Cryst. Data Centre code assigned to journal.
+    Cambridge Crystallographic Data Centre code assigned to journal.
 ;
     _name.category_id             journal
     _name.object_id               coden_Cambridge
@@ -19048,7 +19049,7 @@ save_JOURNAL_COEDITOR
     _definition.update            2021-08-18
     _description.text
 ;
-    Category of items recording coeditor details.
+    Category of items recording Co-editor details.
 ;
     _name.category_id             JOURNAL
     _name.object_id               JOURNAL_COEDITOR
@@ -19067,7 +19068,7 @@ save_journal_coeditor.address
     _definition.update            2012-12-11
     _description.text
 ;
-    The postal address of the coeditor.
+    The postal address of the Co-editor.
 ;
     _name.category_id             journal_coeditor
     _name.object_id               address
@@ -19090,7 +19091,7 @@ save_journal_coeditor.code
     _definition.update            2012-12-11
     _description.text
 ;
-    The coeditor identifier.
+    The Co-editor identifier.
 ;
     _name.category_id             journal_coeditor
     _name.object_id               code
@@ -19113,7 +19114,7 @@ save_journal_coeditor.email
     _definition.update            2012-12-11
     _description.text
 ;
-    The email address of the coeditor.
+    The e-mail address of the Co-editor.
 ;
     _name.category_id             journal_coeditor
     _name.object_id               email
@@ -19136,7 +19137,7 @@ save_journal_coeditor.fax
     _definition.update            2012-12-11
     _description.text
 ;
-    The fax number of the coeditor.
+    The fax number of the Co-editor.
 ;
     _name.category_id             journal_coeditor
     _name.object_id               fax
@@ -19159,7 +19160,7 @@ save_journal_coeditor.name
     _definition.update            2012-12-11
     _description.text
 ;
-    The name of the coeditor.
+    The name of the Co-editor.
 ;
     _name.category_id             journal_coeditor
     _name.object_id               name
@@ -19182,7 +19183,7 @@ save_journal_coeditor.notes
     _definition.update            2012-12-11
     _description.text
 ;
-    Notes on coeditor interaction wrt this publication.
+    Notes on Co-editor interaction with respect to this publication.
 ;
     _name.category_id             journal_coeditor
     _name.object_id               notes
@@ -19205,7 +19206,7 @@ save_journal_coeditor.phone
     _definition.update            2012-12-11
     _description.text
 ;
-    The phone number of the coeditor.
+    The phone number of the Co-editor.
 ;
     _name.category_id             journal_coeditor
     _name.object_id               phone
@@ -19266,7 +19267,7 @@ save_journal_date.from_coeditor
     _definition.update            2021-03-03
     _description.text
 ;
-    Date when the publication was received from the coeditor.
+    Date when the publication was received from the Co-editor.
 ;
     _name.category_id             journal_date
     _name.object_id               from_coeditor
@@ -19450,7 +19451,7 @@ save_journal_date.to_coeditor
     _definition.update            2021-03-03
     _description.text
 ;
-    Date when the publication was sent to the coeditor.
+    Date when the publication was sent to the Co-editor.
 ;
     _name.category_id             journal_date
     _name.object_id               to_coeditor
@@ -19632,7 +19633,7 @@ save_journal_techeditor.email
     _definition.update            2012-12-11
     _description.text
 ;
-    Email address of the technical editor for this publication.
+    E-mail address of the technical editor for this publication.
 ;
     _name.category_id             journal_techeditor
     _name.object_id               email
@@ -19747,7 +19748,7 @@ save_PUBL
     manuscript for publication. They refer either to the paper as
     a whole, or to specific named elements within a paper (such as
     the title and abstract, or the Comment and Experimental
-    sections of Acta Crystallographica Section C). The data items
+    sections required by certain journals). The data items
     in the PUBL_BODY category should be used for the textual
     content of other submissions. Typically, each journal will
     supply a list of the specific items it requires in its Notes
@@ -19914,7 +19915,7 @@ save_publ_author.id_iucr
 ;
     Identifier in the IUCr contact database of a publication
     author. This identifier may be available from the World
-    Directory of Crystallographers (http://wdc.iucr.org).
+    Directory of Crystallographers (https://wdc.iucr.org).
 ;
     _name.category_id             publ_author
     _name.object_id               id_IUCr
@@ -20022,10 +20023,9 @@ save_PUBL_BODY
     Data items in the PUBL_BODY category permit labelling of
     different text sections within the body of a submitted paper.
     Note that these should not be used in a paper which has
-    a standard format with sections tagged by specific data names
-    (such as in Acta Crystallographica Section C). Typically,
-    each journal will supply a list of the specific items it
-    requires in its Notes for Authors.
+    a standard format with sections tagged by specific data names.
+    Typically, each journal will supply a list of the specific
+    items it requires in its Notes for Authors.
 ;
     _name.category_id             PUBL
     _name.object_id               PUBL_BODY
@@ -20162,12 +20162,13 @@ save_PUBL_CONTACT_AUTHOR
     _definition.update            2021-06-29
     _description.text
 ;
-    The category of data items used for details of the contact author(s)
+    The category of data items used for details of the contact author
     of the associated manuscript, to whom general correspondence should
     be addressed.
+
     This is the person contacted by the journal editorial staff.
     This may or may not be the same person as _audit_contact_author,
-    which is the person responsible for the dataset.
+    which is the person responsible for the data set.
 ;
     _name.category_id             PUBL
     _name.object_id               PUBL_CONTACT_AUTHOR
@@ -20286,7 +20287,7 @@ save_publ_contact_author.email
     loop_
       _description_example.case
          name@host.domain.country
-         banjo.patterson@gulgong.edu.au
+         b.patterson@gulgong.edu.au
 
 save_
 
@@ -20302,7 +20303,7 @@ save_publ_contact_author.fax
     _definition.update            2026-09-07
     _description.text
 ;
-    Facsimile telephone number of the contact author(s) of the contact
+    Facsimile telephone number of the contact 
     author of the associated manuscript to whom general correspondence
     should be addressed.
     This is the person contacted by the journal editorial staff.
@@ -20593,7 +20594,7 @@ save_publ_manuscript_incl_extra.defn
     _definition.update            2012-12-13
     _description.text
 ;
-    Yes/No flags whether the corresponding data item marked for inclusion
+    Yes/no flags whether the corresponding data item marked for inclusion
     in a journal request list is a standard CIF definition or not.
 ;
     _name.category_id             publ_manuscript_incl_extra
@@ -20607,9 +20608,9 @@ save_publ_manuscript_incl_extra.defn
       _enumeration_set.state
       _enumeration_set.detail
          yes                      'Include item in journal request list.'
-         y                        'Include item in journal request list.'
-         no                       'Exclude item in journal request list.'
-         n                        'Exclude item in journal request list.'
+         y                        'Abbreviation for "yes".'
+         no                       'Do not include item in journal request list.'
+         n                        'Abbreviation for "no".'
 
     _enumeration.default          yes
 
@@ -20747,7 +20748,7 @@ save_publ_requested.coeditor_name
     _definition.update            2021-08-18
     _description.text
 ;
-    The name of the coeditor whom the authors would like to
+    The name of the Co-editor whom the authors would like to
     process the submitted manuscript.
 ;
     _name.category_id             publ_requested
@@ -21838,7 +21839,7 @@ save_atom_scat_versus_stol.atom_type
     _definition.update            2023-07-05
     _description.text
 ;
-    The identity of the atom specie(s) representing this atom type.
+    The identity of the atom species representing this atom type.
     See _atom_type.symbol for further details.
 ;
     _name.category_id             atom_scat_versus_stol
@@ -23058,7 +23059,7 @@ save_atom_site.type_symbol
     _definition.update            2021-10-27
     _description.text
 ;
-    A code to identify the atom specie(s) occupying this site.
+    A code to identify the atom species occupying this site.
     This code must match a corresponding _atom_type.symbol. The
     specification of this code is optional if component_0 of the
     _atom_site.label is used for this purpose. See _atom_type.symbol.
@@ -25904,7 +25905,7 @@ save_atom_type.symbol
     _definition.update            2026-07-19
     _description.text
 ;
-    The identity of the atom specie(s) representing this atom type.
+    The identity of the atom species representing this atom type.
     Normally this code is the element symbol followed by the charge
     if there is one. The symbol may be composed of any character except
     an underline or a blank, with the proviso that digits designate a
@@ -26793,7 +26794,7 @@ save_atom_type_scat.symbol
     _definition.update            2021-10-27
     _description.text
 ;
-    The identity of the atom specie(s) representing this atom type.
+    The identity of the atom species representing this atom type.
     See _atom_type.symbol for further details.
 ;
     _name.category_id             atom_type_scat
@@ -27329,7 +27330,7 @@ save_refine_ls.abs_structure_flack
     the data item is present, is 'inapplicable', represented by '.' .
     For noncentrosymmetric structures, the value must lie in the
     99.97% Gaussian confidence interval  -3u =< x =< 1 + 3u and a
-    standard uncertainty (e.s.d.) u must be supplied. The
+    standard uncertainty u must be supplied. The
     _enumeration.range of 0.0:1.0 is correctly interpreted as
     meaning (0.0 - 3u) =< x =< (1.0 + 3u).
 
@@ -27383,7 +27384,7 @@ save_refine_ls.abs_structure_rogers
 ;
     The measure of absolute structure as defined by Rogers (1981).
     The value must lie in the 99.97% Gaussian confidence interval
-    -1 -3u =< η =< 1 + 3u and a standard uncertainty (e.s.d.) u must
+    -1 -3u =< η =< 1 + 3u and a standard uncertainty u must
     be supplied. The _enumeration.range of -1.0:1.0 is correctly
     interpreted as meaning (-1.0 - 3u) =< η =< (1.0 + 3u).
 
@@ -27433,7 +27434,7 @@ save_refine_ls.abs_structure_z-score
     determination as described by Klar et al. (2023), based on the
     method of Le Page et al. (1990). For centrosymmetric structures,
     the only permitted value, if the data item is present, is
-    'inapplicable', represented by '.' . Details on how the here
+    'inapplicable', represented by '.' . Details on how the
     reported z-score value was calculated (for example if it is
     a noise-adjusted value or raw value) should be provided in
     _refine_ls.abs_structure_details.
@@ -28198,7 +28199,7 @@ save_refine_ls.number_restraints
     _description.text
 ;
     Number of restrained parameters in the least-squares refinement. These
-    parameters do not directly dependent on another refined parameter. Often
+    parameters are not directly dependent on another refined parameter. Often
     restrained parameters involve geometry or energy dependencies. See also
     _atom_site.constraints and _atom_site.refinement_flags_*. A description
     of refinement constraints may appear in _refine.special_details.
@@ -28390,7 +28391,7 @@ save_refine_ls.restrained_s_all
     Least-squares goodness-of-fit parameter S' for all reflections after
     the final cycle of least squares. This parameter explicitly includes
     the restraints applied in the least-squares process. See also
-    _refine_ls.goodness_of_fit_all definition.
+    the _refine_ls.goodness_of_fit_all definition.
 
            {sum { w [ Y(meas) - Y(calc) ]^2^ }                  }^1/2^
            {         + sum~r~ { w~r~ [ P(calc) - P(targ) ]^2^ } }
@@ -28402,7 +28403,7 @@ save_refine_ls.restrained_s_all
               Y(calc)  = the calculated coefficients
                          (see _refine_ls.structure_factor_coef)
               w        = the least-squares reflection weight
-                         [1/square of standard uncertainty (e.s.d.)]
+                         [1/square of standard uncertainty]
               P(calc)  = the calculated restraint values
               P(targ)  = the target restraint values
               w~r~     = the restraint weight
@@ -28474,7 +28475,7 @@ save_refine_ls.restrained_s_gt
               Y(calc)    = the calculated coefficients
                          (see _refine_ls.structure_factor_coef)
               w        = the least-squares reflection weight
-                         [1/square of standard uncertainty (e.s.d.)]
+                         [1/square of standard uncertainty]
               P(calc)  = the calculated restraint values
               P(targ)  = the target restraint values
               w~r~     = the restraint weight
@@ -28527,7 +28528,7 @@ save_refine_ls.sample_shape_details
     during dynamical refinement where this cannot be defined completely by
     the formula given in _refine_ls.sample_shape_expression.
 
-    Reference: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
+    Reference: Palatinus, L., Petříček, V. & Corrêa, C. A. (2015). Acta
          Cryst. A71, 235-244.
 ;
     _name.category_id             refine_ls
@@ -28548,7 +28549,7 @@ save_refine_ls.sample_shape_expression
     Formula for the sample thickness distribution when the sample
     thickness is considered during dynamical refinement.
 
-    Reference: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
+    Reference: Palatinus, L., Petříček, V. & Corrêa, C. A. (2015). Acta
          Cryst. A71, 235-244.
 ;
     _name.category_id             refine_ls
@@ -28579,7 +28580,7 @@ save_refine_ls.sample_thickness
 ;
     The refined sample thickness as determined by dynamical refinement.
 
-    Reference: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
+    Reference: Palatinus, L., Petříček, V. & Corrêa, C. A. (2015). Acta
          Cryst. A71, 235-244.
 ;
     _name.category_id             refine_ls
@@ -28656,7 +28657,7 @@ save_refine_ls.shift_over_su_max_lt
     _definition.update            2012-12-11
     _description.text
 ;
-    Upper limit for the largest ratio of the final l-s parameter
+    Upper limit for the largest ratio of the final least-squares parameter
     shift divided by the final standard uncertainty. This item is
     used when the largest value of the shift divided by the final
     standard uncertainty is too small to measure.
@@ -28715,7 +28716,7 @@ save_refine_ls.shift_over_su_mean_lt
     _definition.update            2012-12-11
     _description.text
 ;
-    Upper limit for the average ratio of the final l-s parameter
+    Upper limit for the average ratio of the final least-squares parameter
     shift divided by the final standard uncertainty. This item is
     used when the average value of the shift divided by the final
     standard uncertainty is too small to measure.
@@ -28805,8 +28806,8 @@ save_refine_ls.weighting_scheme
     _definition.update            2012-11-20
     _description.text
 ;
-    General description of the weighting scheme used in the least-squares.
-    An enumerated code should be contained in this description.
+    General description of the weighting scheme used in the least-squares
+    refinement. An enumerated code should be contained in this description.
 ;
     _name.category_id             refine_ls
     _name.object_id               weighting_scheme
