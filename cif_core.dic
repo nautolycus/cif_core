@@ -14638,7 +14638,7 @@ save_geom_torsion.angle
 ;
     Angle defined by the sites identified by _geom_torsion.id.
     The torsion-angle definition should be that of Klyne and Prelog.
-    The vector direction _geom_torsion.atom_site_label_2 to 
+    The vector direction _geom_torsion.atom_site_label_2 to
     _geom_torsion.atom_site_label_3 is the viewing
     direction, and the torsion angle is the angle of twist required
     to superimpose the projection of the vector between site 2 and
@@ -20303,7 +20303,7 @@ save_publ_contact_author.fax
     _definition.update            2026-09-07
     _description.text
 ;
-    Facsimile telephone number of the contact 
+    Facsimile telephone number of the contact
     author of the associated manuscript to whom general correspondence
     should be addressed.
     This is the person contacted by the journal editorial staff.
@@ -20607,10 +20607,10 @@ save_publ_manuscript_incl_extra.defn
     loop_
       _enumeration_set.state
       _enumeration_set.detail
-         yes                      'Include item in journal request list.'
-         y                        'Abbreviation for "yes".'
-         no                       'Do not include item in journal request list.'
-         n                        'Abbreviation for "no".'
+         yes                     'Include item in journal request list.'
+         y                       'Abbreviation for "yes".'
+         no                      'Do not include item in journal request list.'
+         n                       'Abbreviation for "no".'
 
     _enumeration.default          yes
 
