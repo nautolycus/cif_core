@@ -378,9 +378,9 @@ save_diffrn.flux_density
     _diffrn_radiation.beam_flux should be used instead.
 
     Reference: Dickerson, J. L., McCubbin, P. T. N., Brooks-Bartlett,
-    J. C. & Garman, E. F. (2024). Doses for X-ray and electron
-    diffraction: New features in RADDOSE-3D including intensity decay
-    models. Protein Sci. 33, e5005.
+         J. C. & Garman, E. F. (2024). Doses for X-ray and electron
+         diffraction: New features in RADDOSE-3D including intensity decay
+         models. Protein Sci. 33, e5005.
 ;
     _name.category_id             diffrn
     _name.object_id               flux_density
@@ -526,8 +526,9 @@ save_diffrn.special_details
     _type.contents                Text
     _description_example.case
 ;
-    The results may not be entirely reliable as the measurement was
-    made during a heat wave when the air-conditioning had failed.
+    The results may not be entirely reliable as the measurement
+    was made during a heat wave when the air-conditioning had
+    failed.
 ;
 
 save_
@@ -561,9 +562,9 @@ save_diffrn.total_dose
     experiment.
 
     Reference: Dickerson, J. L., McCubbin, P. T. N., Brooks-Bartlett,
-    J. C. & Garman, E. F. (2024). Doses for X-ray and electron
-    diffraction: New features in RADDOSE-3D including intensity decay
-    models. Protein Sci. 33, e5005.
+         J. C. & Garman, E. F. (2024). Doses for X-ray and electron
+         diffraction: New features in RADDOSE-3D including intensity decay
+         models. Protein Sci. 33, e5005.
 ;
     _name.category_id             diffrn
     _name.object_id               total_dose
@@ -979,7 +980,7 @@ save_cell.formula_units_z_prime
     cases a justification of the assigned value should be given in
     _cell.formula_units_Z_prime_details.
 
-    Ref: Flack, H. D. (2002).
+    References: Flack, H. D. (2002).
            https://www.iucr.org/__data/iucr/lists/coredmg/msg00196.html
          Steed, J. et al. (2014). https://zprime.co.uk/limitations
 ;
@@ -1028,7 +1029,7 @@ save_cell.formula_units_z_prime_details
     appropriate value for reasons of symmetry, chirality, disorder etc.
     (Flack, 2002; Steed et al., 2014).
 
-    Ref: Flack, H. D. (2002).
+    References: Flack, H. D. (2002).
            https://www.iucr.org/__data/iucr/lists/coredmg/msg00196.html
          Steed, J. et al. (2014). https://zprime.co.uk/limitations
 ;
@@ -1184,8 +1185,8 @@ save_cell.orthogonal_matrix
     Rollett's axial assignments with cell vectors a,b,c aligned
     with orthogonal axes X,Y,Z so that c||Z and b lies in the YZ plane.
 
-    Ref: Rollett, J. S. (1965). Computing Methods in Crystallography, p. 22.
-    Oxford: Pergamon Press.
+    Reference: Rollett, J. S. (1965). Computing Methods in Crystallography,
+         p. 22. Oxford: Pergamon Press.
 ;
     _name.category_id             cell
     _name.object_id               orthogonal_matrix
@@ -1218,7 +1219,8 @@ save_cell.reciprocal_angle_alpha
     _description.text
 ;
     Reciprocal of the angle between _cell.length_b and _cell.length_c.
-    Ref: Buerger, M. J. (1942). X-ray Crystallography, p. 360.
+
+    Reference: Buerger, M. J. (1942). X-ray Crystallography, p. 360.
          New York: John Wiley & Sons Inc.
 ;
     _name.category_id             cell
@@ -1272,7 +1274,8 @@ save_cell.reciprocal_angle_beta
     _description.text
 ;
     Reciprocal of the angle between _cell.length_a and _cell.length_c.
-    Ref: Buerger, M. J. (1942). X-ray Crystallography, p. 360.
+
+    Reference: Buerger, M. J. (1942). X-ray Crystallography, p. 360.
          New York: John Wiley & Sons Inc.
 ;
     _name.category_id             cell
@@ -1326,7 +1329,8 @@ save_cell.reciprocal_angle_gamma
     _description.text
 ;
     Reciprocal of the angle between _cell.length_a and _cell.length_b.
-    Ref: Buerger, M. J. (1942). X-ray Crystallography, p. 360.
+
+    Reference: Buerger, M. J. (1942). X-ray Crystallography, p. 360.
          New York: John Wiley & Sons Inc.
 ;
     _name.category_id             cell
@@ -2482,7 +2486,7 @@ save_DIFFRN_COMPONENT_PID
 ;
     The category of data items providing persistent identifiers for
     instrumentation associated with data collection. These identifiers
-    will generally be registered with independent organisations.
+    will generally be registered with independent organizations.
 ;
     _name.category_id             DIFFRN
     _name.object_id               DIFFRN_COMPONENT_PID
@@ -3085,8 +3089,9 @@ save_DIFFRN_ORIENT_MATRIX
     _definition.update            2012-11-26
     _description.text
 ;
-    The category of data items which specify the matrix specifying the
-    orientation of the crystal axes to the diffractometer goniometer.
+    The category of data items which record details about the matrix
+    specifying the orientation of the crystal axes to the diffractometer
+    goniometer.
 ;
     _name.category_id             DIFFRN_ORIENT
     _name.object_id               DIFFRN_ORIENT_MATRIX
@@ -3287,7 +3292,7 @@ save_diffrn_orient_matrix.ubij
 ;
     With  o  as  diffrn_orient_matrix
 
-     _diffrn_orient_matrix.UBIJ  =   [[ o.ub_11, o.ub_12, o.ub_13 ],
+     _diffrn_orient_matrix.UBij  =   [[ o.ub_11, o.ub_12, o.ub_13 ],
                                       [ o.ub_21, o.ub_22, o.ub_23 ],
                                       [ o.ub_31, o.ub_32, o.ub_33 ]]
 ;
@@ -3717,7 +3722,7 @@ save_diffrn_radiation.polarisn_norm
     _description.text
 ;
     The angle, as viewed from the specimen, between the perpendicular
-    component of the polarisation and the diffraction plane.
+    component of the polarization and the diffraction plane.
 ;
     _name.category_id             diffrn_radiation
     _name.object_id               polarisn_norm
@@ -3737,9 +3742,9 @@ save_diffrn_radiation.polarisn_ratio
     _definition.update            2012-11-26
     _description.text
 ;
-    Polarisation ratio of the diffraction beam incident on the crystal.
-    It is the ratio of the perpendicularly polarised to the parallel
-    polarised component of the radiation. The perpendicular component
+    Polarization ratio of the diffraction beam incident on the crystal.
+    It is the ratio of the perpendicularly polarized to the parallel
+    polarized component of the radiation. The perpendicular component
     forms an angle of _diffrn_radiation.polarisn_norm to the normal to
     the diffraction plane of the sample (i.e. the plane containing the
     incident and reflected beams).
@@ -3790,7 +3795,9 @@ save_diffrn_radiation.type
     _definition.update            2022-10-04
     _description.text
 ;
-    DEPRECATED. Use _diffrn_radiation_wavelength.type. Details of the
+    **DEPRECATED**
+
+    Use _diffrn_radiation_wavelength.type. Details of the
     radiation source or energy spectrum.
 ;
     _name.category_id             diffrn_radiation
@@ -3819,7 +3826,9 @@ save_diffrn_radiation.xray_symbol
     _definition.update            2022-10-04
     _description.text
 ;
-    DEPRECATED. Use _diffrn_radiation_wavelength.xray_symbol. IUPAC
+    **DEPRECATED**
+
+    Use _diffrn_radiation_wavelength.xray_symbol. IUPAC
     symbol for the X-ray wavelength for probe radiation.
 ;
     _name.category_id             diffrn_radiation
@@ -3908,7 +3917,7 @@ save_diffrn_radiation_wavelength.determination
       _enumeration_set.state
       _enumeration_set.detail
          fundamental
-             'Fundamental property of matter, e.g. MoKα.'
+             'Fundamental property of matter, e.g. Mo Kα.'
          estimated
              'Estimated, e.g. from monochromator angle or time of flight.'
          refined
@@ -3924,7 +3933,7 @@ save_diffrn_radiation_wavelength.id
     _description.text
 ;
     Code identifying the radiation used in the diffraction measurements.
-    This is linked to _diffrn_refln.wavelength_id and _refln.wavelength_id
+    This is linked to _diffrn_refln.wavelength_id and _refln.wavelength_id.
 ;
     _name.category_id             diffrn_radiation_wavelength
     _name.object_id               id
@@ -4163,7 +4172,7 @@ save_diffrn_refln.class_code
     _definition.update            2021-10-27
     _description.text
 ;
-    Code for reflection class, if assigned. e.g. modulated structures
+    Code for reflection class, if assigned, e.g. modulated structures.
 ;
     _name.category_id             diffrn_refln
     _name.object_id               class_code
@@ -4211,7 +4220,7 @@ save_diffrn_refln.counts_bg_2
     _description.text
 ;
     The measured background counts on the other side of the
-    peak to the measurement of _diffrn_refln.counts_bg_1
+    peak from the measurement of _diffrn_refln.counts_bg_1
     when measuring using a point detector.
 
     Note that counts-per-second values should be converted to
@@ -4525,7 +4534,7 @@ save_diffrn_refln.intensity_bg_2
     _description.text
 ;
     The measured background counts on the other side of the
-    peak to the measurement of _diffrn_refln.intensity_bg_1
+    peak from the measurement of _diffrn_refln.intensity_bg_1
     when measuring using a point detector.
 
     Use these entries for measurements where intensity values are not
@@ -4699,8 +4708,8 @@ save_diffrn_refln.scale_group_code
     _definition.update            2023-11-14
     _description.text
 ;
-    Code identifying the scale applying to this reflection. The code must match
-    a _diffrn_scale_group.code in the DIFFRN_SCALE_GROUP list.
+    Code identifying the scale applicable to this reflection. The code must
+    match a _diffrn_scale_group.code in the DIFFRN_SCALE_GROUP list.
 ;
     _name.category_id             diffrn_refln
     _name.object_id               scale_group_code
@@ -4835,7 +4844,7 @@ save_diffrn_refln.sin_theta_over_lambda
     _definition.update            2012-11-26
     _description.text
 ;
-    sin(θ)/λ value for this reflection.
+    (sin θ)/λ value for this reflection.
 ;
     _name.category_id             diffrn_refln
     _name.object_id               sin_theta_over_lambda
@@ -4855,9 +4864,9 @@ save_diffrn_refln.standard_code
     _definition.update            2023-11-14
     _description.text
 ;
-    Code identifying reflections measured repeated as standard intensity.
-    Must match a _diffrn_standard_refln.code value or set to '.' if
-    it was not used as an intensity standard.
+    A code indicating that this reflection was measured as a standard
+    reflection. The value must match a _diffrn_standard_refln.code value
+    or be set to '.' if it was not used as an intensity standard.
 ;
     _name.category_id             diffrn_refln
     _name.object_id               standard_code
@@ -5443,7 +5452,7 @@ save_diffrn_reflns_class.d_res_high
     _definition.update            2012-11-26
     _description.text
 ;
-    Highest resolution in reflection class i.e. smallest d value in class.
+    Highest resolution in reflection class, i.e. smallest d value in class.
 ;
     _name.category_id             diffrn_reflns_class
     _name.object_id               d_res_high
@@ -5463,7 +5472,7 @@ save_diffrn_reflns_class.d_res_low
     _definition.update            2012-11-26
     _description.text
 ;
-    Lowest resolution in reflection class i.e. largest d value in class.
+    Lowest resolution in reflection class, i.e. largest d value in class.
 ;
     _name.category_id             diffrn_reflns_class
     _name.object_id               d_res_low
@@ -5691,7 +5700,7 @@ save_
 
 save_diffrn_reflns_transf_matrix.tij
 
-    _definition.id                '_diffrn_reflns_transf_matrix.TIJ'
+    _definition.id                '_diffrn_reflns_transf_matrix.Tij'
     _definition.update            2021-03-01
     _description.text
 ;
@@ -5702,7 +5711,7 @@ save_diffrn_reflns_transf_matrix.tij
                                  |31 32 33|
 ;
     _name.category_id             diffrn_reflns_transf_matrix
-    _name.object_id               TIJ
+    _name.object_id               Tij
     _type.purpose                 Number
     _type.source                  Derived
     _type.container               Matrix
@@ -5714,7 +5723,7 @@ save_diffrn_reflns_transf_matrix.tij
 ;
     With t as diffrn_reflns_transf_matrix
 
-         _diffrn_reflns_transf_matrix.TIJ =  [[t.11, t.12, t.13],
+         _diffrn_reflns_transf_matrix.Tij =  [[t.11, t.12, t.13],
                                               [t.21, t.22, t.23],
                                               [t.31, t.32, t.33]]
 ;
@@ -5776,8 +5785,9 @@ save_diffrn_scale_group.i_net
     _definition.update            2021-03-03
     _description.text
 ;
-    Scale for a specific measurement group of reflections. Is multiplied
-    with the net intensity to place all intensities on a common scale.
+    The scale for a specific measurement group of reflections which is
+    to be multiplied with the net intensity to place all intensities on
+    a common scale.
 ;
     _name.category_id             diffrn_scale_group
     _name.object_id               I_net
@@ -5906,6 +5916,8 @@ save_diffrn_source.description
     _definition.update            2024-02-14
     _description.text
 ;
+    **DEPRECATED**
+
     The general class of the source of radiation. This is deprecated.
     Use _diffrn_source.device and _diffrn_source.details.
 ;
@@ -5984,8 +5996,10 @@ save_diffrn_source.ed_diffracting_area_selection
     loop_
       _enumeration_set.state
       _enumeration_set.detail
-         probe  'Diffraction region selected by the size of the probe (= beam)'
-         SAED   'Selected-area electron diffraction'
+         probe
+             'Diffraction region selected by the size of the probe (= beam).'
+         SAED
+             'Selected-area electron diffraction.'
 
 save_
 
@@ -6026,7 +6040,7 @@ save_diffrn_source.make
     _description.text
 ;
     Description of the make, model or name of the source device.
-    Large scale facilities should use _diffrn_source.facility and
+    Large-scale facilities should use _diffrn_source.facility and
     _diffrn_source.beamline to identify the source of radiation.
 ;
     _name.category_id             diffrn_source
@@ -6183,7 +6197,7 @@ save_diffrn_standards.decay_percent
     _description.text
 ;
     The percentage decrease in the mean of the intensities for the
-    standard reflections at the start to the finish of the measurement
+    standard reflections from the start to the finish of the measurement
     process. This value affords a measure of the overall decay in
     crystal quality during measurement. Negative values only occur in
     exceptional instances where the final intensities are greater than
@@ -7563,7 +7577,7 @@ save_refln.symmetry_multiplicity
     symmetry-equivalent reflections are available in International
     Tables for Crystallography, Volume A (2016), Table 3.2.3.2.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -9052,7 +9066,7 @@ save_exptl.method_id_panet
 
     _description_example.case     http://purl.org/pan-science/PaNET/PaNET01102
     _description_example.detail
-        'Data were obtained from a single crystal X-ray diffraction experiment.'
+        'Data were obtained from a single-crystal X-ray diffraction experiment.'
 
 save_
 
@@ -9191,7 +9205,8 @@ save_chemical.absolute_configuration
     Necessary conditions for this assignment are given by H. D. Flack
     and G. Bernardinelli (1999, 2000).
 
-    Ref: Flack, H. D. & Bernardinelli, G. (1999). Acta Cryst. A55, 908-915.
+    References:
+         Flack, H. D. & Bernardinelli, G. (1999). Acta Cryst. A55, 908-915.
                 https://doi.org/10.1107/S0108767399004262
          Flack, H. D. & Bernardinelli, G. (2000). J. Appl. Cryst. 33, 1143-1148.
                 https://doi.org/10.1107/S0021889800007184
@@ -9370,7 +9385,7 @@ save_chemical.enantioexcess_crystal
     1.0 indicates that the crystal is enantiomerically pure.
     Enantioexcess is defined in the IUPAC Recommendations
     (Moss et al., 1996).
-    Ref: Moss G. P. et al. (1996). Basic Terminology of Stereochemistry.
+    Reference: Moss G. P. et al. (1996). Basic Terminology of Stereochemistry.
          Pure Appl. Chem., 68, 2193-2222.
          https://doi.org/10.1351/pac199668122193
          https://iupac.qmul.ac.uk/stereo/
@@ -10358,7 +10373,8 @@ save_chemical_formula.iupac
     formatting a formula in accordance with journal rules. This
     should appear in the data block in addition to the most
     appropriate of the other CHEMICAL_FORMULA data names.
-    Ref: IUPAC (1990). Nomenclature of Inorganic Chemistry.
+
+    Reference: IUPAC (1990). Nomenclature of Inorganic Chemistry.
          Oxford: Blackwell Scientific Publications.
 ;
     _name.category_id             chemical_formula
@@ -10593,13 +10609,15 @@ save_exptl_absorpt.correction_t_max
     _description.text
 ;
     Maximum transmission factor for the crystal and radiation applied
-    to the measured intensities, it includes the correction for
+    to the measured intensities. It includes the correction for
     absorption by the specimen mount and diffractometer as well
     as by the specimen itself. These values give the transmission (T)
     factor by which measured intensities have been REDUCED due to
     absorption. Sometimes referred to as absorption correction A or
-    1/A* (see "Crystal Structure Analysis for Chemists and Biologists"
-    by J.P. Glusker et al., Wiley)
+    1/A* (see Glusker et al., 1994).
+
+    Reference: Glusker, J. P., Lewis, M. & Rossi, M. (1994). Crystal Structure
+         Analysis for Chemists and Biologists. New York: Wiley-VCH.
 ;
     _name.category_id             exptl_absorpt
     _name.object_id               correction_T_max
@@ -10630,8 +10648,10 @@ save_exptl_absorpt.correction_t_min
     as by the specimen itself. These values give the transmission (T)
     factor by which measured intensities have been REDUCED due to
     absorption. Sometimes referred to as absorption correction A or
-    1/A* (see "Crystal Structure Analysis for Chemists and Biologists"
-    by J.P. Glusker et al., Wiley)
+    1/A* (see Glusker et al., 1994).
+
+    Reference: Glusker, J. P., Lewis, M. & Rossi, M. (1994). Crystal Structure
+         Analysis for Chemists and Biologists. New York: Wiley-VCH.
 ;
     _name.category_id             exptl_absorpt
     _name.object_id               correction_T_min
@@ -10737,30 +10757,29 @@ save_exptl_absorpt.special_details
       _description_example.case
       _description_example.detail
 ;
-         X-ray beam inhomogeneity and goniometer imperfection account for much
-         of the difference between estimated values of Tmin and Tmax and the
-         _exptl_absorpt_correction_ values.
+       X-ray beam inhomogeneity and goniometer imperfection account
+       for much of the difference between estimated values of Tmin
+       and Tmax and the _exptl_absorpt.correction_* values.
 ;
 ;
-         Text modified from:
-         Petty, Anthony J. et al. Computationally aided design of a high-
-         performance organic semiconductor: the development of a universal
-         crystal engineering core. Chemical Science, 2019
-         https://doi.org/10.1039/C9SC02930C
-         COD 1552381
+       Text modified from:
+       Petty, Anthony J. et al. (2019). Computationally aided design of a high-
+       performance organic semiconductor: the development of a universal
+       crystal engineering core. Chem. Sci., 10, 10543-10649.
+       https://doi.org/10.1039/C9SC02930C; COD 1552381.
 ;
 ;
-         Neutron linear absorption coefficient is wavelength dependent. The
-         value of 0.2216 (mm^-1^) shown in _exptl_absorpt_coefficient_mu is the
-         sample absorption coefficient for a neutron wavelength at 1.0 Å.
+       Neutron linear absorption coefficient is wavelength
+       dependent. The value of 0.2216 (mm^-1^) shown in
+       _exptl_absorpt.coefficient_mu is the sample absorption
+       coefficient for a neutron wavelength at 1.0 Å.
 ;
 ;
-         Text modified from:
-         Lengyel, Jeff et al. Antiferroelectric Phase Transition in a
-         Proton-Transfer Salt of Squaric Acid and 2,3-Dimethylpyrazine.
-         Journal of the American Chemical Society, 2019, 141, 16279-16287
-         https://doi.org/10.1021/jacs.9b04473
-         COD 4127699
+       Text modified from:
+       Lengyel, Jeff et al. (2019). Antiferroelectric phase transition in a
+       proton-transfer salt of squaric acid and 2,3-dimethylpyrazine.
+       J. Am. Chem. Soc., 141, 16279-16287.
+       https://doi.org/10.1021/jacs.9b04473; COD 4127699.
 ;
 
 save_
@@ -10790,7 +10809,7 @@ save_exptl_crystal.colour
 ;
     Colour description of the crystal.
 
-    Data items from EXPTL_CRYSTAL_APPEARANCE category should be used in
+    Data items from the EXPTL_CRYSTAL_APPEARANCE category should be used in
     preference to this item when possible.
 ;
     _name.category_id             exptl_crystal
@@ -11107,13 +11126,13 @@ save_exptl_crystal.f_000
          f~r~   = real part of the scattering factors at θ = 0
          f~i~   = imaginary part of the scattering factors at θ = 0
 
-                 the sum is taken over each atom in the unit cell
+                 the sum is taken over each atom in the unit cell.
 
     For X-rays, non-dispersive F(000) is a positive number and counts
     the effective number of electrons in the unit cell; for neutrons,
     non-dispersive F(000) (which may be negative) counts the total
     nuclear scattering power in the unit cell. See
-       https://dictionary.iucr.org/F(000)
+    https://dictionary.iucr.org/F(000).
 ;
     _name.category_id             exptl_crystal
     _name.object_id               F_000
@@ -11178,7 +11197,7 @@ save_exptl_crystal.mosaic_method
     _description.text
 ;
     How parameters derived from the spot shape (such as mosaic block
-    size and rotation, beam divergence, and crossfire) and their
+    size and rotation, beam divergence and crossfire) and their
     errors were estimated.
 
     This can be a written description or a citation to a specific
@@ -11204,15 +11223,15 @@ save_exptl_crystal.mosaicity
     specified in degrees of all the mosaic domain blocks in the crystal,
     represented as a standard deviation. Here, a mosaic block is a set of
     contiguous unit cells assumed to be perfectly aligned. Lower mosaicity
-    indicates better ordered crystals. See for example:
-
-    Nave, C. (1998). Acta Cryst. D54, 848-853.
+    indicates better ordered crystals. See, for example, Nave (1998).
 
     Note that many software packages estimate the mosaic rotation distribution
     differently and may combine several physical properties of the experiment
     into a single mosaic term. This term will help fit the modelled spots
     to the observed spots without necessarily being directly related to the
     physics of the crystal itself.
+
+    Reference: Nave, C. (1998). Acta Cryst. D54, 848-853.
 ;
     _name.category_id             exptl_crystal
     _name.object_id               mosaicity
@@ -11880,7 +11899,7 @@ save_SPACE_GROUP
     Hermann-Mauguin symbol contains information on the choice of
     the basis, but not on the choice of origin.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -11904,7 +11923,7 @@ save_space_group.bravais_type
     setting-independent symbol oS replaces the setting-dependent
     symbols oA, oB and oC.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.,
          Tables 1.3.4.1 and 2.1.1.1.
          Chichester: John Wiley & Sons.
@@ -12011,7 +12030,7 @@ save_space_group.it_coordinate_system_code
     computer-interpretable and cannot be used to define the
     coordinate system.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -12263,7 +12282,7 @@ save_space_group.name_h-m_full
     _space_group.name_Hall, or list the symmetry operations
     or generators.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -12309,7 +12328,7 @@ save_space_group.name_h-m_ref
     In the enumeration list, each possible value is identified by
     space-group number and Schoenflies symbol.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -12344,9 +12363,10 @@ save_space_group.name_hall
     the coordinate system. The underscore in the name is only
     retained because it was used in earlier archived files. It
     should not be used in new CIFs.
-    Ref: Hall, S. R. (1981). Acta Cryst. A37, 517-525
+
+    Reference: Hall, S. R. (1981). Acta Cryst. A37, 517-525.
          [See also International Tables for Crystallography,
-         Vol. B (1993) 1.4 Appendix B]
+         Vol. B (1993) 1.4 Appendix B.]
 ;
     _name.category_id             space_group
     _name.object_id               name_Hall
@@ -12379,7 +12399,7 @@ save_space_group.name_schoenflies
     The symbol is given with a period, '.', separating the
     Schoenflies point group and the superscript.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -12413,7 +12433,7 @@ save_space_group.patterson_name_h-m
     Bars should be given as negative signs before the number
     to which they apply.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed., Table 2.1.3.3.
          Chichester: John Wiley & Sons.
 ;
@@ -12518,7 +12538,7 @@ save_space_group.reference_setting
     by Schoenflies symbol and by the Hermann-Mauguin symbol,
     augmented by :2 or :h suffixes as described above.
 
-    Ref: International Tables for Crystallography (2002). Volume A,
+    Reference: International Tables for Crystallography (2002). Volume A,
          Space-group symmetry, edited by Th. Hahn, 5th ed.
          Dordrecht: Kluwer Academic Publishers.
 
@@ -12654,7 +12674,9 @@ save_symmetry.cell_setting
     _definition.update            2024-02-14
     _description.text
 ;
-    This data item should not be used and is DEPRECATED as it is
+    **DEPRECATED**
+
+    This data item should not be used and is deprecated as it is
     ambiguous.
 
     The original definition is as follows:
@@ -12744,7 +12766,7 @@ save_space_group_generator.xyz
             W3 = W2 x W1
             w3 = W2 x w1 + w2.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -13075,7 +13097,7 @@ save_space_group_wyckoff.letter
     enumeration values '\a' and α are equivalent, and correspond to
     the Greek letter 'alpha' used in International Tables.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -13101,7 +13123,7 @@ save_space_group_wyckoff.multiplicity
     International Tables Volume A. It is the number of equivalent
     sites per conventional unit cell.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -13129,7 +13151,7 @@ save_space_group_wyckoff.site_symmetry
     symbol of the space group (see International Tables for
     Crystallography Volume A, Section 2.1.3.12).
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -13859,7 +13881,7 @@ save_geom_bond.valence
     _geom_bond.id calculated according to the bond-valence model
     (Brown, 2002) from the bond distance.
 
-    Ref: Brown, I. D. (2002). The Chemical Bond in Inorganic Chemistry:
+    Reference: Brown, I. D. (2002). The Chemical Bond in Inorganic Chemistry:
          the Bond-Valence Model, eq. (3.1). Oxford: Oxford University Press.
 ;
     _name.category_id             geom_bond
@@ -14622,7 +14644,8 @@ save_geom_torsion.angle
     site 1 onto the projection of the vector between site 3 and
     site 4. Clockwise torsions are positive, anticlockwise torsions
     are negative.
-    Ref: Klyne, W. & Prelog, V. (1960). Experientia, 16, 521-523.
+
+    Reference: Klyne, W. & Prelog, V. (1960). Experientia, 16, 521-523.
 ;
     _name.category_id             geom_torsion
     _name.object_id               angle
@@ -15378,7 +15401,7 @@ save_VALENCE
     The category of items used to characterize localized inorganic
     bond valences using the model of Brown (2002).
 
-    Ref: Brown, I. D. (2002). The Chemical Bond in Inorganic Chemistry:
+    Reference: Brown, I. D. (2002). The Chemical Bond in Inorganic Chemistry:
          the Bond-Valence Model, eq. (3.1). Oxford: Oxford University Press.
 ;
     _name.category_id             MODEL
@@ -15398,7 +15421,7 @@ save_VALENCE_PARAM
     used to calculate bond valences from bond lengths using the
     model of Brown (2002).
 
-    Ref: Brown, I. D. (2002). The Chemical Bond in Inorganic Chemistry:
+    Reference: Brown, I. D. (2002). The Chemical Bond in Inorganic Chemistry:
          the Bond-Valence Model, eq. (3.1). Oxford: Oxford University Press.
 ;
     _name.category_id             VALENCE
@@ -15932,9 +15955,9 @@ save_audit_author.email
     recognizable to international networks. The format of e-mail addresses is
     given in RFC 2822.
 
-    Ref: Resnick, P. (2001). Internet Message Format. RFC 2822.
-    Section 3.4, Address Specification.
-    https://www.rfc-editor.org/rfc/rfc2822
+    Reference: Resnick, P. (2001). Internet Message Format. RFC 2822.
+         Section 3.4, Address Specification.
+         https://www.rfc-editor.org/rfc/rfc2822
 ;
     _name.category_id             audit_author
     _name.object_id               email
@@ -16367,9 +16390,9 @@ save_audit_contact_author.email
     international networks. The format of e-mail addresses is given
     in RFC 2822.
 
-    Ref: Resnick, P. (2001). Internet Message Format. RFC 2822.
-    Section 3.4, Address Specification.
-    https://www.rfc-editor.org/rfc/rfc2822
+    Reference: Resnick, P. (2001). Internet Message Format. RFC 2822.
+         Section 3.4, Address Specification.
+         https://www.rfc-editor.org/rfc/rfc2822
 ;
     _name.category_id             audit_contact_author
     _name.object_id               email
@@ -16703,7 +16726,7 @@ save_audit_dataset.id
     is suggested.
 
     Reference: Davis, K., Peabody, B. & Leach, P. (2024). Universally Unique
-    IDentifiers (UUIDs). RFC9562. https://www.rfc-editor.org/info/rfc9562
+         IDentifiers (UUIDs). RFC9562. https://www.rfc-editor.org/info/rfc9562
 ;
     _name.category_id             audit_dataset
     _name.object_id               id
@@ -17442,7 +17465,7 @@ save_citation.language
     _definition.update            2012-12-11
     _description.text
 ;
-    Language in which the citation appears.
+    Language in which the cited article is written.
 ;
     _name.category_id             citation
     _name.object_id               language
@@ -17498,7 +17521,7 @@ save_citation.publisher
     _description.text
 ;
     The name of the publisher of the cited work. This should be used
-    for citations of journal articles or datasets (in the latter case
+    for citations of journal articles or data sets (in the latter case
     the publisher could be a curated database). For books or book chapters
     use _citation.book_publisher.
 ;
@@ -18008,7 +18031,7 @@ save_database.dataset_doi
     The digital object identifier (DOI) registered to identify
     a data set publication associated with the structure
     described in the current data block. This should be used
-    for a dataset obtained from a curated database such as
+    for a data set obtained from a curated database such as
     CSD or PDB.
 
     A DOI is a unique character string identifying any
@@ -18324,7 +18347,7 @@ save_database_code.nbs
     _definition.update            2012-12-13
     _description.text
 ;
-    Code assigned by the NBS (NIST) Crystal Data Database.
+    Code assigned by the NBS (NIST) Crystal Data database.
 ;
     _name.category_id             database_code
     _name.object_id               NBS
@@ -18413,13 +18436,11 @@ save_DATABASE_RELATED
 ;
     The loop relates a specific instance of a theophylline crystal structure
     to corresponding entries in the COD and CSD crystallographic databases
-    as well as to the general description of the theophyline compound in the
+    as well as to the general description of the theophylline compound in the
     CAS registry.
 
-    This example loop could potentially be added to the CIF file that is
-    provided as supplementary material for the following publication:
-      Ebisuzaki, Y. et al. (1997). Acta Crystallographica, Section C:
-      Crystal Structure Communications, 53(6), 777-779.
+    Based on the structure of anhydrous theophylline published by
+    Ebisuzaki, Y. et al. (1997). Acta Cryst. C53, 777-779.
       https://doi.org/10.1107/S0108270197001960
 ;
 
@@ -18431,7 +18452,7 @@ save_database_related.database_id
     _definition.update            2023-02-02
     _description.text
 ;
-    An identifier for the database that contains the related dataset.
+    An identifier for the database that contains the related data set.
 ;
     _name.category_id             database_related
     _name.object_id               database_id
@@ -18453,7 +18474,7 @@ save_database_related.entry_code
 ;
     The code used by the database referred to in
     _database_related.database_id to identify the
-    related dataset.
+    related data set.
 ;
     _name.category_id             database_related
     _name.object_id               entry_code
@@ -18488,7 +18509,7 @@ save_database_related.relation
     _description.text
 ;
     The general relationship of the data in the data block
-    to the dataset referred to in the database.
+    to the data set referred to in the database.
 ;
     _name.category_id             database_related
     _name.object_id               relation
@@ -18502,28 +18523,29 @@ save_database_related.relation
       _enumeration_set.detail
          Identical
 ;
-         The dataset contents are identical.
+         The data set contents are identical.
 ;
          Subset
 ;
-         The dataset contents are a proper subset of the contents of the data
-         block.
+         The data set contents are a proper subset of the contents of the
+         data block.
 ;
          Superset
 ;
-         The dataset contents include the contents of the data block.
+         The data set contents include the contents of the data block.
 ;
          Derived
 ;
-         The dataset contents are derivable from the contents of the data block.
+         The data set contents are derivable from the contents of the
+         data block.
 ;
          Common
 ;
-         The dataset contents share a common source.
+         The data set contents share a common source.
 ;
          Other
 ;
-         The dataset contents are related to the contents of the data block in
+         The data set contents are related to the contents of the data block in
          a way not included elsewhere in this list. In case this value is used,
          it is strongly recommended to also provide the specifics of the
          relationship using the _database_related.special_details data item.
@@ -18537,7 +18559,7 @@ save_database_related.special_details
     _definition.update            2019-01-08
     _description.text
 ;
-    Information about the external dataset and relationship not encoded
+    Information about the external data set and relationship not encoded
     elsewhere.
 ;
     _name.category_id             database_related
@@ -19809,9 +19831,9 @@ save_publ_author.email
     than one author, this will be looped with _publ_author.name.
     The format of e-mail addresses is given in RFC 2822.
 
-    Ref: Resnick, P. (2001). Internet Message Format. RFC 2822.
-    Section 3.4, Address Specification.
-    https://www.rfc-editor.org/rfc/rfc2822
+    Reference: Resnick, P. (2001). Internet Message Format. RFC 2822.
+         Section 3.4, Address Specification.
+         https://www.rfc-editor.org/rfc/rfc2822
 ;
     _name.category_id             publ_author
     _name.object_id               email
@@ -20204,7 +20226,9 @@ save_publ_contact_author.contact_details
     _definition.update            2024-08-28
     _description.text
 ;
-    DEPRECATED. The _publ_contact_author.name and _publ_contact_author.address
+    **DEPRECATED**
+
+    The _publ_contact_author.name and _publ_contact_author.address
     data items should be used instead of this item.
 
     The name and address of the author submitting the manuscript and data block.
@@ -20248,9 +20272,9 @@ save_publ_contact_author.email
     international networks. The format of e-mail addresses is given
     in RFC 2822.
 
-    Ref: Resnick, P. (2001). Internet Message Format. RFC 2822.
-    Section 3.4, Address Specification.
-    https://www.rfc-editor.org/rfc/rfc2822
+    Reference: Resnick, P. (2001). Internet Message Format. RFC 2822.
+         Section 3.4, Address Specification.
+         https://www.rfc-editor.org/rfc/rfc2822
 ;
     _name.category_id             publ_contact_author
     _name.object_id               email
@@ -22097,7 +22121,8 @@ save_atom_site.b_iso_or_equiv
     a     = the real-space cell vectors
     a*    = the reciprocals of the direct-space cell lengths
     B^ij^ = 8 π^2^ U^ij^
-    Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776.
+
+    Reference: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776.
 
     The IUCr Commission on Nomenclature recommends against the use
     of B for reporting atomic displacement parameters. U, being
@@ -22971,7 +22996,7 @@ save_atom_site.site_symmetry_multiplicity
     deprecated because of historical inconsistencies in practice among
     structure refinement software packages and should not be used.
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -23125,7 +23150,8 @@ save_atom_site.u_iso_or_equiv
 
     a  = the real-space cell vectors
     a* = the reciprocals of the direct-space cell lengths
-    Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776.
+
+    Reference: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776.
 ;
     _name.category_id             atom_site
     _name.object_id               U_iso_or_equiv
@@ -23171,7 +23197,7 @@ save_atom_site.wyckoff_symbol
     The Wyckoff symbol (letter) as listed in the space-group section
     of International Tables for Crystallography, Vol. A (2016).
 
-    Ref: International Tables for Crystallography (2016). Volume A,
+    Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
          Chichester: John Wiley & Sons.
 ;
@@ -24125,13 +24151,13 @@ save_atom_sites.solution_hydrogens
     how the remaining non-hydrogen sites were located; and the
     *_hydrogens code identifies how the hydrogen sites were located.
 
-    Ref: Oszlányi, G. & Süto, A. (2004). Acta Cryst. A60, 134-141;
-         Sheldrick, G. M., Hauptman, H. A., Weeks, C. M.,
-         Miller, R. & Usón, I. (2001). Ab initio phasing.
-         In International Tables for Crystallography,
-         Vol. F. Crystallography of biological macromolecules,
-         edited by M. G. Rossmann and E. Arnold, ch. 16.1.
-         Dordrecht: Kluwer Academic Publishers.
+    References:
+         Oszlányi, G. & Süto, A. (2004). Acta Cryst. A60, 134-141;
+         Sheldrick, G. M., Hauptman, H. A., Weeks, C. M., Miller, R.
+           & Usón, I. (2001). Ab initio phasing. In International Tables
+           for Crystallography, Vol. F. Crystallography of biological
+           macromolecules, edited by M. G. Rossmann and E. Arnold, ch. 16.1.
+           Dordrecht: Kluwer Academic Publishers.
 ;
     _name.category_id             atom_sites
     _name.object_id               solution_hydrogens
@@ -24207,13 +24233,13 @@ save_atom_sites.solution_primary
     how the remaining non-hydrogen sites were located; and the
     *_hydrogens code identifies how the hydrogen sites were located.
 
-    Ref: Oszlányi, G. & Süto, A. (2004). Acta Cryst. A60, 134-141;
-         Sheldrick, G. M., Hauptman, H. A., Weeks, C. M.,
-         Miller, R. and Usón, I. (2001). Ab initio phasing.
-         In International Tables for Crystallography,
-         Vol. F. Crystallography of biological macromolecules,
-         edited by M. G. Rossmann and E. Arnold, ch. 16.1.
-         Dordrecht: Kluwer Academic Publishers.
+    References:
+         Oszlányi, G. & Süto, A. (2004). Acta Cryst. A60, 134-141;
+         Sheldrick, G. M., Hauptman, H. A., Weeks, C. M., Miller, R.
+           & Usón, I. (2001). Ab initio phasing. In International Tables
+           for Crystallography, Vol. F. Crystallography of biological
+           macromolecules, edited by M. G. Rossmann and E. Arnold, ch. 16.1.
+           Dordrecht: Kluwer Academic Publishers.
 ;
     _name.category_id             atom_sites
     _name.object_id               solution_primary
@@ -24285,13 +24311,13 @@ save_atom_sites.solution_secondary
     how the remaining non-hydrogen sites were located; and the
     *_hydrogens code identifies how the hydrogen sites were located.
 
-    Ref: Oszlányi, G. & Süto, A. (2004). Acta Cryst. A60, 134-141;
-         Sheldrick, G. M., Hauptman, H. A., Weeks, C. M.,
-         Miller, R. and Usón, I. (2001). Ab initio phasing.
-         In International Tables for Crystallography,
-         Vol. F. Crystallography of biological macromolecules,
-         edited by M. G. Rossmann and E. Arnold, ch. 16.1.
-         Dordrecht: Kluwer Academic Publishers.
+    References:
+         Oszlányi, G. & Süto, A. (2004). Acta Cryst. A60, 134-141;
+         Sheldrick, G. M., Hauptman, H. A., Weeks, C. M., Miller, R.
+           & Usón, I. (2001). Ab initio phasing. In International Tables
+           for Crystallography, Vol. F. Crystallography of biological
+           macromolecules, edited by M. G. Rossmann and E. Arnold, ch. 16.1.
+           Dordrecht: Kluwer Academic Publishers.
 ;
     _name.category_id             atom_sites
     _name.object_id               solution_secondary
@@ -24793,8 +24819,8 @@ save_atom_sites_cartn_transform.matrix
     assignments with cell vectors a,b,c aligned with orthogonal
     axes X,Y,Z so that c||Z and b lies in the YZ plane.
 
-    Ref: Rollett, J. S. (1965). Computing Methods in Crystallography, p. 22.
-    Oxford: Pergamon Press.
+    Reference: Rollett, J. S. (1965). Computing Methods in Crystallography,
+         p. 22. Oxford: Pergamon Press.
 ;
     _name.category_id             atom_sites_Cartn_transform
     _name.object_id               matrix
@@ -25343,8 +25369,8 @@ save_atom_sites_fract_transform.matrix
     assignments with cell vectors a,b,c aligned with orthogonal
     axes X,Y,Z so that c||Z and b lies in the YZ plane.
 
-    Ref: Rollett, J. S. (1965). Computing Methods in Crystallography, p. 22.
-    Oxford: Pergamon Press.
+    Reference: Rollett, J. S. (1965). Computing Methods in Crystallography,
+         p. 22. Oxford: Pergamon Press.
 ;
     _name.category_id             atom_sites_fract_transform
     _name.object_id               matrix
@@ -26108,7 +26134,9 @@ save_atom_type_scat.cromer_mann_coeffs
     The set of Cromer-Mann coefficients for generating X-ray scattering
     factors:
     [ c, a1, b1, a2, b2, a3, b3, a4, b4 ].
-    Ref: International Tables for Crystallography (2004). Vol. C, Table 6.1.1.4.
+
+    Reference: International Tables for Crystallography (2004). Vol. C,
+         Table 6.1.1.4.
 ;
     _name.category_id             atom_type_scat
     _name.object_id               Cromer_Mann_coeffs
@@ -26359,7 +26387,7 @@ save_atom_type_scat.exponential_polynomial_coefs
     where s = (sin θ)/λ, θ is the diffraction angle and λ is the wavelength
     of the incident radiation in angstroms.
 
-    Ref: Thorkildsen, G. (2023). Acta Cryst. A79, 318–330.
+    Reference: Thorkildsen, G. (2023). Acta Cryst. A79, 318–330.
 ;
     _name.category_id             atom_type_scat
     _name.object_id               exponential_polynomial_coefs
@@ -26451,7 +26479,7 @@ save_atom_type_scat.gaussian_coefs
     where s = (sin θ)/λ, θ is the diffraction angle and λ is the wavelength
     of the incident radiation in angstroms.
 
-    Ref: Thorkildsen, G. (2023). Acta Cryst. A79, 318–330.
+    Reference: Thorkildsen, G. (2023). Acta Cryst. A79, 318–330.
 ;
     _name.category_id             atom_type_scat
     _name.object_id               Gaussian_coefs
@@ -26591,7 +26619,7 @@ save_atom_type_scat.hi_ang_fox_coeffs
     The set of Fox et al. coefficients for generating high-angle
     X-ray scattering factors: [ c0, c1, c2, c3 ]
 
-    Ref: International Tables for Crystallography (2004). Vol. C,
+    Reference: International Tables for Crystallography (2004). Vol. C,
          Table 6.1.1.5
 ;
     _name.category_id             atom_type_scat
@@ -26630,9 +26658,10 @@ save_atom_type_scat.inv_mott_bethe_coefs
     θ is the diffraction angle and λ is the wavelength of the incident
     radiation in angstroms.
 
-    Ref: Thorkildsen, G. (2023). Acta Cryst. A79, 318–330.
+    References:
+         Thorkildsen, G. (2023). Acta Cryst. A79, 318–330.
          Mott, N. F. & Bragg, W. L. (1930). Proc. R. Soc. Lond. Ser. A,
-         127, 658–665.
+           127, 658–665.
          Bethe, H. (1930). Ann. Phys. 397, 325–400.
 ;
     _name.category_id             atom_type_scat
@@ -26796,7 +26825,9 @@ save_atom_type_scat.versus_stol_list
     _definition.update            2023-07-05
     _description.text
 ;
-    Deprecated. Data items from the ATOM_SCAT_VERSUS_STOL category should be
+    **DEPRECATED**
+
+    Data items from the ATOM_SCAT_VERSUS_STOL category should be
     used instead of this item.
 
     A table of scattering factors as a function of (sin θ)/λ (sin theta over
@@ -27301,7 +27332,8 @@ save_refine_ls.abs_structure_flack
     standard uncertainty (e.s.d.) u must be supplied. The
     _enumeration.range of 0.0:1.0 is correctly interpreted as
     meaning (0.0 - 3u) =< x =< (1.0 + 3u).
-    Ref: Flack, H. D. (1983). Acta Cryst. A39, 876-881.
+
+    Reference: Flack, H. D. (1983). Acta Cryst. A39, 876-881.
 ;
     _name.category_id             refine_ls
     _name.object_id               abs_structure_Flack
@@ -27354,7 +27386,8 @@ save_refine_ls.abs_structure_rogers
     -1 -3u =< η =< 1 + 3u and a standard uncertainty (e.s.d.) u must
     be supplied. The _enumeration.range of -1.0:1.0 is correctly
     interpreted as meaning (-1.0 - 3u) =< η =< (1.0 + 3u).
-    Ref: Rogers, D. (1981). Acta Cryst. A37, 734-741.
+
+    Reference: Rogers, D. (1981). Acta Cryst. A37, 734-741.
 ;
     _name.category_id             refine_ls
     _name.object_id               abs_structure_Rogers
@@ -27405,11 +27438,11 @@ save_refine_ls.abs_structure_z-score
     a noise-adjusted value or raw value) should be provided in
     _refine_ls.abs_structure_details.
 
-    Ref:  Klar, P. B. et al. (2023). Nature Chem. 15, 848-855.
+    References:
+          Klar, P. B. et al. (2023). Nature Chem. 15, 848-855.
             https://www.doi.org/10.1038/s41557-023-01186-1
           Le Page, Y., Gabe, E. J. & Gainsford, G. J. (1990). J. Appl. Cryst.
-          23, 406-411.
-            https://doi.org/10.1107/S0021889890005775
+            23, 406-411. https://doi.org/10.1107/S0021889890005775
 ;
     _name.category_id             refine_ls
     _name.object_id               abs_structure_z_score
@@ -27494,8 +27527,10 @@ save_refine_ls.extinction_coef
     For 'Becker-Coppens type 2 isotropic' corrections it is
     the 'rho' value. Note that the magnitude of these values is
     usually of the order of 10000.
-    Ref:  Becker, P. J. & Coppens, P. (1974). Acta Cryst. A30,
-          129-147, 148-153.
+
+    References:
+          Becker, P. J. & Coppens, P. (1974). Acta Cryst. A30,
+            129-147, 148-153.
           Zachariasen, W. H. (1967). Acta Cryst. 23, 558-564.
           Larson, A. C. (1967). Acta Cryst. 23, 664-665.
 ;
@@ -27598,7 +27633,8 @@ save_refine_ls.extinction_method
     the multiple coefficients cannot be contained in the
     _refine_ls.extinction_coef and must be listed in _refine.special_details.
 
-    Ref:  Becker, P. J. & Coppens, P. (1974). Acta Cryst. A30, 129-153.
+    References:
+          Becker, P. J. & Coppens, P. (1974). Acta Cryst. A30, 129-153.
           Zachariasen, W. H. (1967). Acta Cryst. 23, 558-564.
           Larson, A. C. (1967). Acta Cryst. 23, 664-665.
 ;
@@ -28490,7 +28526,8 @@ save_refine_ls.sample_shape_details
     Additional details describing the sample thickness when calculated
     during dynamical refinement where this cannot be defined completely by
     the formula given in _refine_ls.sample_shape_expression.
-    Ref: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
+
+    Reference: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
          Cryst. A71, 235-244.
 ;
     _name.category_id             refine_ls
@@ -28510,7 +28547,8 @@ save_refine_ls.sample_shape_expression
 ;
     Formula for the sample thickness distribution when the sample
     thickness is considered during dynamical refinement.
-    Ref: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
+
+    Reference: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
          Cryst. A71, 235-244.
 ;
     _name.category_id             refine_ls
@@ -28540,7 +28578,8 @@ save_refine_ls.sample_thickness
     _description.text
 ;
     The refined sample thickness as determined by dynamical refinement.
-    Ref: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
+
+    Reference: Palatinus, L., Petricek, V. & Correa, C. A. (2015). Acta
          Cryst. A71, 235-244.
 ;
     _name.category_id             refine_ls
@@ -29097,7 +29136,7 @@ save_FUNCTION
     _definition.update            2024-05-15
     _description.text
 ;
-    The crystallographic functions the invoked in the definition
+    The crystallographic functions invoked in the definition
     methods of core structure data items defined and used within
     the Crystallographic Information Framework (CIF).
 ;
@@ -29184,7 +29223,7 @@ save_function.seitzfromjones
     The function
                   s  =  SeitzFromJones( j )
 
-    returns a 4x4 Seitz matrix from the Jones faithful representation of
+    returns a 4x4 Seitz matrix from the Jones' faithful representation of
     the equivalent position which is a character string e.g. 1/2+x,-x,z.
 ;
     _name.category_id             function
@@ -29354,7 +29393,7 @@ save_function.symop
 
     returns a character string of the form 'n_pqr' where n is the
     symmetry equivalent site number and [p,q,r] is the cell translation
-    vector PLUS [5,5,5].
+    vector plus [5,5,5].
 ;
     _name.category_id             function
     _name.object_id               Symop
