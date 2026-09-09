@@ -761,7 +761,7 @@ save_cell.convert_uij_to_betaij
 
     t = exp [ - 2π^2^ ( U11 h h a* a* + ...... 2 U23 k l b* c* ) ]
     t = exp [ - 0.25  ( B11 h h a* a* + ...... 2 B23 k l b* c* ) ]
-    t = exp [ -       ( β11 h h + ............ 2 β23 k l ) ]
+    t = exp [ -       ( β11 h h + ............ 2 β23 k l ) ].
 
     The conversion of the U or B matrices to the β matrix
 
@@ -819,9 +819,9 @@ save_cell.convert_uiso_to_uij
     The reciprocal-space matrix for converting the isotropic Uiso
     atomic displacement parameter to the anisotropic matrix Uij.
 
-                     | 1        cos(γ*)  cos(β*) |
-    Uij   =   Uiso * | cos(γ*)  1        cos(α*) |
-                     | cos(β*)  cos(α*)  1       |
+                     | 1         (cos γ*)  (cos β*) |
+    Uij   =   Uiso * | (cos γ*)  1         (cos α*) |
+                     | (cos β*)  (cos α*)   1       |
 ;
     _name.category_id             cell
     _name.object_id               convert_Uiso_to_Uij
@@ -953,8 +953,8 @@ save_cell.formula_units_z_details
     _type.contents                Text
     _description_example.case
 ;
-         The fractional value of Z=2/3 allows integral coefficients in
-         the chemical formula, emphasizing that the compound is
+         The fractional value of Z=2/3 allows integral coefficients
+         in the chemical formula, emphasizing that the compound is
          stoichiometric in spite of the multiple orderings within
          these molecular perovskites A~x~{Ni[Bi(SCN)~6~]}.
 ;
@@ -1041,11 +1041,12 @@ save_cell.formula_units_z_prime_details
     _type.contents                Text
     _description_example.case
 ;
-         Z' has been assigned the value 1 as the catenane is considered
-         a single complex of two interlocked molecules that cannot be
-         chemically separated, in preference to a crystallographic
-         interpretation that considers it as two interlinked independent
-         molecules that would suggest setting Z' = 2.
+         Z' has been assigned the value 1 as the catenane is
+         considered a single complex of two interlocked molecules
+         that cannot be chemically separated, in preference to a
+         crystallographic interpretation that considers it as two
+         interlinked independent molecules that would suggest
+         setting Z' = 2.
 ;
     _description_example.detail
 ;
@@ -1182,7 +1183,7 @@ save_cell.orthogonal_matrix
 ;
     Orthogonal matrix of the crystal unit cell. Definition uses
     Rollett's axial assignments with cell vectors a,b,c aligned
-    with orthogonal axes X,Y,Z so that c||Z and b in plane YZ.
+    with orthogonal axes X,Y,Z so that c||Z and b lies in the YZ plane.
 
     Reference: Rollett, J. S. (1965). Computing Methods in Crystallography,
          p. 22. Oxford: Pergamon Press.
@@ -1793,7 +1794,7 @@ save_cell.vector_a
     _definition.update            2021-07-07
     _description.text
 ;
-    The cell vector along the x axis.
+    The cell vector along the X axis.
 ;
     _name.category_id             cell
     _name.object_id               vector_a
@@ -1837,7 +1838,7 @@ save_cell.vector_b
     _definition.update            2021-07-07
     _description.text
 ;
-    The cell vector along the y axis.
+    The cell vector along the Y axis.
 ;
     _name.category_id             cell
     _name.object_id               vector_b
@@ -1881,7 +1882,7 @@ save_cell.vector_c
     _definition.update            2021-07-07
     _description.text
 ;
-    The cell vector along the z axis.
+    The cell vector along the Z axis.
 ;
     _name.category_id             cell
     _name.object_id               vector_c
@@ -1993,7 +1994,7 @@ save_cell_measurement.condition_id
     _description.text
 ;
     A pointer to the diffraction conditions used for cell measurement,
-    where different to the diffraction conditions used for data
+    where different from the diffraction conditions used for data
     collection.
 ;
     _name.category_id             cell_measurement
@@ -2043,7 +2044,7 @@ save_cell_measurement.pressure
 
     The pressure at which the unit-cell parameters were measured
     (not the pressure used to synthesize the sample).
-    Replaced by '_diffrn.ambient_pressure'
+    Replaced by '_diffrn.ambient_pressure'.
 ;
     _name.category_id             cell_measurement
     _name.object_id               pressure
@@ -9298,7 +9299,7 @@ save_chemical.enantioexcess_bulk
     (Moss et al., 1996). The composition of the crystal
     and bulk must be the same.
 
-    Reference: Moss G. P. et al. (1996). Basic Terminology of Stereochemistry.
+    Ref: Moss G. P. et al. (1996). Basic terminology of stereochemistry.
          Pure Appl. Chem. 68, 2193-2222.
          https://doi.org/10.1351/pac199668122193
          https://iupac.qmul.ac.uk/stereo/
@@ -9465,7 +9466,7 @@ save_chemical.identifier_inchi
     a standard and human-readable way to encode molecular information
     and to facilitate the search for such information in databases
     and on the web.
-    Reference: McNaught, A. (2006). Chem. Int. (IUPAC), 28 (6), 12-14.
+    Ref: McNaught, A. (2006). Chem. Int., 28(6), 12-14.
          https://doi.org/10.1515/ci.2006.28.6.12
          https://www.iupac.org/inchi/
 ;
@@ -9733,15 +9734,17 @@ save_chemical.properties_biological
        activity against cyclooxygenase-1 (COX-1)
 ;
 ;
-       antibiotic activity against Bacillus subtilis (ATCC 6051) but no
-       significant activity against Candida albicans (ATCC 14053),
-       Aspergillus flavus (NRRL 6541) & Fusarium verticillioides (NRRL 25457)
+       antibiotic activity against Bacillus subtilis (ATCC 6051)
+       but no significant activity against Candida albicans
+       (ATCC 14053), Aspergillus flavus (NRRL 6541) and Fusarium
+       verticillioides (NRRL 25457)
 ;
 ;
        weakly potent lipoxygenase nonredox inhibitor
 ;
 ;
-       no influenza A virus sialidase inhibitory & plaque reduction activities
+       no influenza A virus sialidase inhibitory and
+       plaque reduction activities
 ;
 ;
        low toxicity against Drosophila melanogaster
@@ -10129,7 +10132,7 @@ save_CHEMICAL_CONN_BOND
     _description.text
 ;
     The category of data items which specify the connections between
-    the atoms sites in the CHEMICAL_CONN_ATOM list and the nature
+    the atom sites in the CHEMICAL_CONN_ATOM list and the nature
     of the chemical bond between these atoms. These are details about
     the two-dimensional (2D) chemical structure of the molecular species.
     They allow a 2D chemical diagram to be reconstructed for use in a
@@ -10317,15 +10320,23 @@ save_CHEMICAL_FORMULA
        of their symbol. This is the 'Hill' system used by Chemical
        Abstracts. This ordering is used in _chemical_formula.moiety
        and _chemical_formula.sum.
-
-          _chemical_formula.IUPAC      '[Mo (C O)4 (C18 H33 P)2]'
-          _chemical_formula.moiety     'C40 H66 Mo O4 P2'
-          _chemical_formula.structural '((C O)4 (P (C6 H11)3)2)Mo'
-          _chemical_formula.sum         'C40 H66 Mo O4 P2'
-          _chemical_formula.weight      768.81
 ;
     _name.category_id             CHEMICAL
     _name.object_id               CHEMICAL_FORMULA
+
+    _description_example.case
+;
+       _chemical_formula.IUPAC      '[Mo (C O)4 (C18 H33 P)2]'
+       _chemical_formula.moiety     'C40 H66 Mo O4 P2'
+       _chemical_formula.structural '((C O)4 (P (C6 H11)3)2)Mo'
+       _chemical_formula.sum         'C40 H66 Mo O4 P2'
+       _chemical_formula.weight      768.81
+;
+    _description_example.detail
+;
+       Based on data set 9597gaus of Alyea, Ferguson & Kannan
+       [Acta Cryst. (1996), C52, 765-767)].
+;
 
 save_
 
@@ -10337,7 +10348,7 @@ save_chemical_formula.analytical
     _description.text
 ;
     Formula determined by standard chemical analysis including trace
-    elements. Parentheses are used only for standard uncertainties (su's).
+    elements. Parentheses are used only for standard uncertainties (s.u.'s).
 ;
     _name.category_id             chemical_formula
     _name.object_id               analytical
@@ -10384,9 +10395,9 @@ save_chemical_formula.moiety
     _description.text
 ;
     Formula with each discrete bonded residue or ion shown as a
-    separate moiety. See above CHEMICAL_FORMULA for rules
-    for writing chemical formulae. In addition to the general
-    formulae requirements, the following rules apply:
+    separate moiety. See the CHEMICAL_FORMULA category description
+    for rules for writing chemical formulae. In addition to the
+    general formulae requirements, the following rules apply:
        1. Moieties are separated by commas ','.
        2. The order of elements within a moiety follows general rule
           5 in CHEMICAL_FORMULA.
@@ -10421,9 +10432,7 @@ save_chemical_formula.structural
     _definition.update            2023-01-13
     _description.text
 ;
-    This formula should correspond to the structure as reported, i.e.
-    trace elements not included in atom type and atom site lists should
-    not be included. See category description for the rules for writing
+    See the CHEMICAL_FORMULA category description for the rules for writing
     chemical formulae for inorganics, organometallics, metal complexes
     etc., in which bonded groups are preserved as discrete entities
     within parentheses, with post-multipliers as required. The order of
@@ -10456,7 +10465,7 @@ save_chemical_formula.sum
 ;
     Chemical formulae in which all discrete bonded residues and ions are
     summed over the constituent elements, following the ordering given
-    in rule 5 of the category description. Parentheses normally not used.
+    in rule 5 of the category description. Parentheses are not normally used.
 ;
     _name.category_id             chemical_formula
     _name.object_id               sum
@@ -10475,9 +10484,10 @@ save_chemical_formula.weight
     _definition.update            2021-09-24
     _description.text
 ;
-    Mass corresponding to the formulae _chemical_formula.structural,
-    *.IUPAC, *.moiety or *.sum and, together with the Z value and cell
-    parameters yield the density given as _exptl_crystal.density_diffrn.
+    This mass should correspond to the formulae given under
+    _chemical_formula.structural, *.IUPAC, *.moiety or *.sum and,
+    together with the Z value and cell parameters, should yield
+    the density given as _exptl_crystal.density_diffrn.
 ;
     _name.category_id             chemical_formula
     _name.object_id               weight
