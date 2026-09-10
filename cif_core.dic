@@ -6464,7 +6464,7 @@ save_REFLN
     _definition.update            2024-11-12
     _description.text
 ;
-    The category of data items used to describe the reflection data
+    The category of data items that describe the reflection data
     used in the refinement of a crystallographic structure model.
 ;
     _name.category_id             DIFFRACTION
@@ -7209,12 +7209,34 @@ save_refln.include_status
     loop_
       _enumeration_set.state
       _enumeration_set.detail
-         o    'ob : within _reflns.threshold_expression; within d-res limits.'
-         <    'lt : without _reflns.threshold_expression; within d-res limits.'
-         -    'sa : systematically absent reflection due to symmetry.'
-         x    'du : deemed unreliable measurement -- not used.'
-         h    'hd : above _refine_ls.d_res_high.'
-         l    'ld : below _refine_ls.d_res_low.'
+         o
+;
+         Significant intensity (i.e. satisfies the _reflns.threshold_expression
+         criterion) and lies within the resolution range bracketed by
+         _refine_ls.d_res_high and *_low.
+;
+         <
+;
+         Does not satisfy the _reflns.threshold_expression criterion and
+         lies within the resolution range bracketed by _refine_ls.d_res_high
+         and *_low.
+;
+         -
+;
+         Systematically absent reflection due to symmetry.
+;
+         x
+;
+         Unreliable measurement -- not used.
+;
+         h
+;
+         Lies above the _refine_ls.d_res_high resolution limit.
+;
+         l
+;
+         Lies below the _refine_ls.d_res_low resolution limit.
+;
 
 save_
 
@@ -7386,7 +7408,7 @@ save_refln.phase_calc
     _definition.update            2013-04-27
     _description.text
 ;
-    The phase of the calculated structure-factor.
+    The phase of the calculated structure factor.
 ;
     _name.category_id             refln
     _name.object_id               phase_calc
@@ -7481,8 +7503,8 @@ save_refln.refinement_status
     loop_
       _enumeration_set.state
       _enumeration_set.detail
-         incl                     'Included in ls process.'
-         excl                     'Excluded from ls process.'
+         incl                     'Included in least-squares process.'
+         excl                     'Excluded from least-squares process.'
          extn                     'Excluded due to extinction.'
 
 save_
@@ -7495,7 +7517,7 @@ save_refln.scale_group_code
     _description.text
 ;
     Code identifying the scale (if there is more than one scale) used
-    convert the measured structure factor to a common absolute value.
+    to convert the measured structure factor to a common absolute value.
 ;
     _name.category_id             refln
     _name.object_id               scale_group_code
@@ -7520,7 +7542,7 @@ save_refln.sin_theta_over_lambda
     _definition.update            2013-03-07
     _description.text
 ;
-    The sin(θ)/λ value for this reflection.
+    The (sin θ)/λ value for this reflection.
 ;
     _name.category_id             refln
     _name.object_id               sin_theta_over_lambda
@@ -7621,7 +7643,7 @@ save_refln.wavelength_id
     _definition.update            2021-10-27
     _description.text
 ;
-    Code identifying the wavelength in DIFFRN_RADIATION_WAVELENGTH list.
+    Code identifying the wavelength in the DIFFRN_RADIATION_WAVELENGTH list.
 ;
     _name.category_id             refln
     _name.object_id               wavelength_id
@@ -7660,7 +7682,7 @@ save_reflns.apply_dispersion_to_fcalc
     _definition.update            2019-01-09
     _description.text
 ;
-    Yes or No flag on whether the anomalous dispersion scattering
+    Yes or no flag on whether the anomalous dispersion scattering
     components will be applied in the F complex calculation.
     See _refln.F_complex
 ;
@@ -7744,6 +7766,7 @@ save_reflns.friedel_coverage
         N(Laue symmetry) is the number of reflections obtained on
             averaging under the Laue symmetry.
 
+    Examples:
       (a) For centrosymmetric structures its value is
           necessarily equal to 0.0 as the crystal class
           is identical to the Laue symmetry.
@@ -7780,14 +7803,15 @@ save_reflns.friedel_fraction_full
     _definition.update            2013-01-20
     _description.text
 ;
-    The ratio of Friedel pairs measured to _diffrn_reflns.theta_full
-    to the number theoretically possible (ignoring reflections in
-    centric projections and systematic absences throughout).
+    The ratio of the number of Friedel pairs measured to
+    _diffrn_reflns.theta_full to the number theoretically possible
+    (ignoring reflections in centric projections and systematic
+    absences throughout).
     In contrast to _reflns.Friedel_coverage this can take values in
     the full range 0 to 1 for any non-centrosymmetric space group,
     and so one can see at a glance how completely the Friedel pairs
     have been measured. For centrosymmetric space groups the value
-    would be given as not-applicable '.'
+    would be given as the 'not-applicable' value '.' .
 ;
     _name.category_id             reflns
     _name.object_id               Friedel_fraction_full
@@ -7807,14 +7831,15 @@ save_reflns.friedel_fraction_max
     _definition.update            2013-01-20
     _description.text
 ;
-    The ratio of Friedel pairs measured to _diffrn_reflns.theta_max
-    to the number theoretically possible (ignoring reflections in
-    centric projections and systematic absences throughout).
+    The ratio of the number of Friedel pairs measured to
+    _diffrn_reflns.theta_max to the number theoretically possible
+    (ignoring reflections in centric projections and systematic
+    absences throughout).
     In contrast to _reflns.Friedel_coverage this can take values in
     the full range 0 to 1 for any non-centrosymmetric space group,
     and so one can see at a glance how completely the Friedel pairs
     have been measured. For centrosymmetric space groups the value
-    would be given as not-applicable '.'
+    would be given as the 'not-applicable' value '.' .
 ;
     _name.category_id             reflns
     _name.object_id               Friedel_fraction_max
@@ -7960,7 +7985,8 @@ save_reflns.number_gt
     _description.text
 ;
     Count of reflections in the REFLN set (not the DIFFRN_REFLN set) which
-    are significantly intense (see _reflns.threshold_expression). It may
+    are significantly intense, satisfying the criterion specified by
+    _reflns.threshold_expression. It may
     include Friedel equivalent reflections (i.e. those which are equivalent
     under the Laue symmetry but inequivalent under the crystal class),
     depending on the nature of the structure and the procedures used.
@@ -8017,7 +8043,7 @@ save_reflns.special_details
     _definition.update            2012-11-26
     _description.text
 ;
-    Description of the properties of the REFLN reflection list that is not
+    Description of the properties of the REFLN reflection list that are not
     given in other data items. Should include details about the averaging
     of symmetry-equivalent reflections including Friedel pairs.
 ;
@@ -8045,8 +8071,8 @@ save_reflns.threshold_expression
     _description.text
 ;
     Description of the criterion used to classify a reflection as having a
-    "significant intensity". This criterion is usually expressed in terms
-    of a u(I) or u(F) threshold. "u" is the standard uncertainty.
+    significant intensity. This criterion is usually expressed in terms
+    of a u(I) or u(F) threshold, where u is the standard uncertainty.
 ;
     _name.category_id             reflns
     _name.object_id               threshold_expression
@@ -8168,7 +8194,8 @@ save_reflns_class.number_gt
     _description.text
 ;
     Count of reflections in this REFLN class (not the DIFFRN_REFLN set)
-    which are significantly intense (see _reflns.threshold_expression). It may
+    which are significantly intense, satisfying the criterion specified
+    by _reflns.threshold_expression. It may
     include Friedel equivalent reflections (i.e. those which are equivalent
     under the Laue symmetry but inequivalent under the crystal class),
     depending on the nature of the structure and the procedures used.
@@ -12102,10 +12129,14 @@ save_space_group.it_number
     _description.text
 ;
     The number as assigned in International Tables for Crystallography
-    Vol. A, specifying the proper affine class (i.e. the orientation
+    Vol. A (2016), specifying the proper affine class (i.e. the orientation
     preserving affine class) of space groups (crystallographic space
     group type) to which the space group belongs. This number defines
-    the space group type but not the coordinate system expressed.
+    the space-group type but not the coordinate system expressed.
+
+    Reference: International Tables for Crystallography (2016). Volume A,
+         Space-group symmetry, edited by M. I. Aroyo, 6th ed.
+         Chichester: John Wiley & Sons.
 ;
     _name.category_id             space_group
     _name.object_id               IT_number
@@ -12190,10 +12221,11 @@ save_space_group.name_h-m_alt
     to be given. The way in which this item is used is determined
     by the user and in general is not intended to be interpreted by
     computer. It may, for example, be used to give one of the
-    extended Hermann-Mauguin symbols given in Table 4.3.1 of
-    International Tables for Crystallography Vol. A (1995) or
+    extended Hermann-Mauguin symbols given in Table 1.5.4.4 of
+    International Tables for Crystallography Vol. A (2016) or
     a Hermann-Mauguin symbol for a conventional or unconventional
     setting.
+
     Each component of the space group name is separated by a
     space or underscore. The use of space is strongly
     recommended. The underscore is only retained because it
@@ -12201,14 +12233,19 @@ save_space_group.name_h-m_alt
     used in new CIFs. Subscripts should appear without special
     symbols. Bars should be given as negative signs before the
     numbers to which they apply.
-    The commonly used Hermann-Mauguin symbol determines the space
-    group type uniquely, but a given space group type may be
-    described by more than one Hermann-Mauguin symbol. The space
-    group type is best described using _space_group.IT_number.
+
+    The commonly used Hermann-Mauguin symbol determines the space-group
+    type uniquely, but a given space-group type may be
+    described by more than one Hermann-Mauguin symbol. The space-group
+    type is best described using _space_group.IT_number.
     The Hermann-Mauguin symbol may contain information on the
     choice of basis though not on the choice of origin. To
     define the setting uniquely use _space_group.name_Hall or
     list the symmetry operations.
+
+    Reference: International Tables for Crystallography (2016). Volume A,
+         Space-group symmetry, edited by M. I. Aroyo, 6th ed.
+         Chichester: John Wiley & Sons.
 ;
     _name.category_id             space_group
     _name.object_id               name_H_M_alt
@@ -12364,9 +12401,15 @@ save_space_group.name_hall
     retained because it was used in earlier archived files. It
     should not be used in new CIFs.
 
-    Reference: Hall, S. R. (1981). Acta Cryst. A37, 517-525.
-         [See also International Tables for Crystallography,
-         Vol. B (1993) 1.4 Appendix B.]
+    See Hall (1991) and International Tables for Crystallography
+    Volume B (2008), Appendix A1.4.2.
+
+    References:
+         Hall, S. R. (1981). Acta Cryst. A37, 517-525;
+         International Tables for Crystallography (2008). Volume B,
+           Reciprocal space, edited by U. Shmueli, 3rd ed.
+           Chichester: John Wiley & Sons.
+
 ;
     _name.category_id             space_group
     _name.object_id               name_Hall
@@ -12518,7 +12561,7 @@ save_space_group.reference_setting
 
     The 230 reference settings chosen are identical to the settings
     listed in International Tables for Crystallography Volume A
-    (2002). For the space groups where more than one setting is
+    (2016). For the space groups where more than one setting is
     given in International Tables, the following choices have
     been made.
 
@@ -12538,15 +12581,15 @@ save_space_group.reference_setting
     by Schoenflies symbol and by the Hermann-Mauguin symbol,
     augmented by :2 or :h suffixes as described above.
 
-    Reference: International Tables for Crystallography (2002). Volume A,
-         Space-group symmetry, edited by Th. Hahn, 5th ed.
-         Dordrecht: Kluwer Academic Publishers.
-
+    References:
+         International Tables for Crystallography (2016). Volume A,
+           Space-group symmetry, edited by M. I. Aroyo, 6th ed.
+           Chichester: John Wiley & Sons;
          Grosse-Kunstleve, R. W. (2001). Xtal System of
-         Crystallographic Programs, System Documentation.
-         https://xtal.sourceforge.net/man/symmetry.html
-         (or follow links to Documentation->Xtal Users Manual->Symmetry from
-         https://xtal.sourceforge.net).
+           Crystallographic Programs, System Documentation,
+           https://xtal.sourceforge.net/man/symmetry.html
+           (or follow links to Documentation->Xtal Users Manual->Symmetry from
+           https://xtal.sourceforge.net).
 ;
     _name.category_id             space_group
     _name.object_id               reference_setting
@@ -12568,7 +12611,7 @@ save_space_group.transform_pp_abc
     This item specifies the transformation (P,p) of the basis
     vectors from the setting used in the CIF (a,b,c) to the
     reference setting given in _space_group.reference_setting
-    (a',b',c'). The value is given in Jones faithful notation
+    (a',b',c'). The value is given in Jones' faithful notation
     corresponding to the rotational matrix P combined with the
     origin shift vector p in the expression:
 
@@ -12622,7 +12665,7 @@ save_space_group.transform_qq_xyz
     _space_group.reference_setting [(x',y',z') referred to the
     basis vectors (a',b',c')].
 
-    The value given in Jones faithful notation corresponds to the
+    The value given in Jones' faithful notation corresponds to the
     rotational matrix Q combined with the origin shift vector q in
     the expression:
 
@@ -12677,7 +12720,7 @@ save_symmetry.cell_setting
     **DEPRECATED**
 
     This data item should not be used and is deprecated as it is
-    ambiguous.
+    ambiguous. Use _space_group.crystal_system instead.
 
     The original definition is as follows:
 
@@ -12779,7 +12822,7 @@ save_space_group_generator.xyz
     _description_example.case     x,1/2-y,1/2+z
     _description_example.detail
 ;
-    C glide reflection through the plane (x,1/4,z) chosen as one of
+    c-glide reflection through the plane (x,1/4,z) chosen as one of
     the generators of the space group.
 ;
 
@@ -12880,8 +12923,8 @@ save_space_group_symop.operation_xyz
 
               X' = WX + w.
 
-    (Note: X is used to represent bold_italics_x in International
-    Tables for Crystallography Vol. A, Part 5.)
+    (Note: X is used to represent the bold italic x in International
+    Tables for Crystallography Volume A, Chapter 1.5.)
 
     When a list of symmetry operations is given, it must contain
     a complete set of coordinate representatives which generates
@@ -12889,13 +12932,17 @@ save_space_group_symop.operation_xyz
     all primitive translations of the space group. Such
     representatives are to be found as the coordinates of
     the general-equivalent position in International Tables for
-    Crystallography Vol. A (2002), to which it is necessary to
+    Crystallography Volume A (2016), to which it is necessary to
     add any centring translations shown above the
     general-equivalent position.
 
     That is to say, it is necessary to list explicitly all the
     symmetry operations required to generate all the atoms in
     the unit cell defined by the setting used.
+
+    Reference: International Tables for Crystallography (2016). Volume A,
+         Space-group symmetry, edited by M. I. Aroyo, 6th ed.
+         Chichester: John Wiley & Sons.
 ;
     _name.category_id             space_group_symop
     _name.object_id               operation_xyz
@@ -12905,7 +12952,7 @@ save_space_group_symop.operation_xyz
     _type.contents                Text
     _description_example.case     x,1/2-y,1/2+z
     _description_example.detail
-        'Glide reflection through the plane (x,1/4,z) with glide vector (1/2)c.'
+        'c-glide reflection through the plane (x,1/4,z).'
 
 save_
 
@@ -13120,8 +13167,8 @@ save_space_group_wyckoff.multiplicity
     _description.text
 ;
     The multiplicity of this Wyckoff position as given in
-    International Tables Volume A. It is the number of equivalent
-    sites per conventional unit cell.
+    International Tables for Crystallography Volume A. It is the number
+    of equivalent sites per conventional unit cell.
 
     Reference: International Tables for Crystallography (2016). Volume A,
          Space-group symmetry, edited by M. I. Aroyo, 6th ed.
@@ -16357,7 +16404,7 @@ save_audit_contact_author.address
     _definition.update            2019-01-09
     _description.text
 ;
-    The mailing address of the author of the data set to whom
+    The mailing address of an author of the data set to whom
     correspondence about crystallographic details should be addressed.
 ;
     _name.category_id             audit_contact_author
@@ -16384,7 +16431,7 @@ save_audit_contact_author.email
     _definition.update            2012-11-29
     _description.text
 ;
-    The electronic mail (e-mail) address of the author of the data set
+    The electronic mail (e-mail) address of an author of the data set
     to whom correspondence about crystallographic details should be
     addressed.
     The e-mail address should be given in a form recognizable to
@@ -16416,7 +16463,7 @@ save_audit_contact_author.fax
     _definition.update            2026-09-07
     _description.text
 ;
-    Facsimile telephone number of the author of the data set to whom
+    Facsimile telephone number of an author of the data set to whom
     correspondence about crystallographic details should be addressed.
     The recommended style starts with the international dialling prefix,
     followed, where appropriate, by the area code in parentheses,
@@ -16438,7 +16485,7 @@ save_audit_contact_author.id
     _definition.update            2025-07-31
     _description.text
 ;
-    Arbitrary identifier for the author of the data set to whom
+    Arbitrary identifier for an author of the data set to whom
     correspondence about crystallographic details should be addressed.
 ;
     _name.category_id             audit_contact_author
@@ -16477,7 +16524,7 @@ save_audit_contact_author.id_iucr
     _definition.update            2026-06-17
     _description.text
 ;
-    Identifier in the IUCr contact database of the author of the
+    Identifier in the IUCr contact database of an author of the
     data set to whom correspondence about crystallographic details
     should be addressed.
     This is the person contacted by the journal editorial staff.
@@ -16500,7 +16547,7 @@ save_audit_contact_author.id_orcid
     _definition.update            2026-06-17
     _description.text
 ;
-    Identifier in the ORCID registry of the author of the data set
+    Identifier in the ORCID registry of an author of the data set
     to whom correspondence about crystallographic details should be
     addressed.
     ORCID is an open, non-profit, community-driven service to provide
@@ -16528,7 +16575,7 @@ save_audit_contact_author.name
     _definition.update            2023-01-10
     _description.text
 ;
-    The name of the author of the data set to whom correspondence
+    The name of an author of the data set to whom correspondence
     about crystallographic details should be addressed.
     The family name(s), followed by a comma and including any
     dynastic components, precedes the first name(s) or initial(s).
@@ -16558,7 +16605,7 @@ save_audit_contact_author.phone
     _definition.update            2026-09-07
     _description.text
 ;
-    Telephone number of the author of the data set to whom
+    Telephone number of an author of the data set to whom
     correspondence about crystallographic details should be addressed.
     The recommended style starts with the international dialling prefix,
     followed, where appropriate, by the area code in parentheses,
@@ -20162,7 +20209,7 @@ save_PUBL_CONTACT_AUTHOR
     _definition.update            2021-06-29
     _description.text
 ;
-    The category of data items used for details of the contact author
+    The category of data items used for details of a contact author
     of the associated manuscript, to whom general correspondence should
     be addressed.
 
@@ -20188,7 +20235,7 @@ save_publ_contact_author.address
     _definition.update            2012-11-29
     _description.text
 ;
-    The address of the contact author of the associated manuscript to
+    The address of a contact author of the associated manuscript to
     whom general correspondence should be addressed.
     This is the person contacted by the journal editorial staff.
 ;
@@ -20265,7 +20312,7 @@ save_publ_contact_author.email
     _definition.update            2014-06-12
     _description.text
 ;
-    The electronic mail (e-mail) address of the contact author of the
+    The electronic mail (e-mail) address of a contact author of the
     associated manuscript to whom general correspondence should be
     addressed.
     This is the person contacted by the journal editorial staff.
@@ -20327,7 +20374,7 @@ save_publ_contact_author.id
     _definition.update            2025-07-31
     _description.text
 ;
-    Arbitrary identifier for the contact author of the associated
+    Arbitrary identifier for a contact author of the associated
     manuscript to whom general correspondence should be addressed.
     This is the person contacted by the journal editorial staff.
 ;
@@ -20367,7 +20414,7 @@ save_publ_contact_author.id_iucr
     _definition.update            2023-02-02
     _description.text
 ;
-    Identifier in the IUCr contact database of the contact author of
+    Identifier in the IUCr contact database of a contact author of
     the associated manuscript to whom general correspondence should be
     addressed.
     This is the person contacted by the journal editorial staff.
@@ -20390,7 +20437,7 @@ save_publ_contact_author.id_orcid
     _definition.update            2023-02-02
     _description.text
 ;
-    Identifier in the ORCID Registry of the contact author of the
+    Identifier in the ORCID Registry of a contact author of the
     associated manuscript to whom general correspondence should be
     addressed.
     This is the person contacted by the journal editorial staff.
@@ -20419,7 +20466,7 @@ save_publ_contact_author.name
     _definition.update            2012-11-29
     _description.text
 ;
-    The name of the contact author of the associated manuscript to
+    The name of a contact author of the associated manuscript to
     whom general correspondence should be addressed.
     This is the person contacted by the journal editorial staff.
 ;
@@ -20445,7 +20492,7 @@ save_publ_contact_author.phone
     _definition.update            2026-09-07
     _description.text
 ;
-    Telephone number of the contact author of the associated
+    Telephone number of a contact author of the associated
     manuscript to whom general correspondence should be addressed.
     This is the person contacted by the journal editorial staff.
     The recommended style starts with the international dialling prefix,
